@@ -5,12 +5,13 @@ const Heading = styled.h1`
   color: white;
   background: darkslateblue;
   margin: 0;
-  height: 3em;
+  height: 4em;
   display: grid;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
+  text-transform: uppercase;
 `
 
 export default class Home extends Component {

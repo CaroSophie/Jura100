@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.main`
   display: grid;
-  background: grey;
+  background: whitesmoke;
 `
 
 export default class Home extends Component {
@@ -13,7 +13,9 @@ export default class Home extends Component {
     return (
       <Wrapper>
         <Header />
-        <Cards />
+        <Cards text="Zivilrecht" />
+        <Cards text="Öffentliches Recht" />
+        <Cards text="Strafrecht" />
       </Wrapper>
     )
   }

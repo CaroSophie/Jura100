@@ -3,25 +3,21 @@ import styled from 'styled-components'
 
 const Stylecards = styled.section`
   height: 150px;
-  background: whitesmoke;
+  background: lightgrey;
   color: black;
-  margin: 50px;
+  margin: 30px;
   display: grid;
-  justify-content: center;
   align-items: center;
-  border: 2px solid darkslateblue;
+  text-align: center;
+  box-shadow: 2px 2px 5px black;
+  font-size: 3em;
 `
 
 export default class Cards extends Component {
   render() {
     return (
       <main>
-        <Stylecards>Zivilrecht</Stylecards>
-        <Stylecards>Öffentliches Recht</Stylecards>
-        <Stylecards>Strafrecht</Stylecards>
-        <Stylecards>Zivilrecht</Stylecards>
-        <Stylecards>Öffentliches Recht</Stylecards>
-        <Stylecards>Strafrecht</Stylecards>
+        <Stylecards>{this.props.text}</Stylecards>
       </main>
     )
   }
