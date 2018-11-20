@@ -6,7 +6,7 @@ import { text, boolean, number } from '@storybook/addon-knobs'
 
 import StyleBox from './StyleBox'
 import Header from '../Homescreen/Header'
-import Cards from '../Homescreen/Cards'
+import Card from '../Homescreen/Card'
 
 storiesOf('Header', module).add('default', () => (
   <React.Fragment>
@@ -14,4 +14,6 @@ storiesOf('Header', module).add('default', () => (
   </React.Fragment>
 ))
 
-storiesOf('Cards', module).add('Rechtsgebiete', () => <Cards />)
+storiesOf('Card', module).add('Rechtsgebiete', () => (
+  <Card text={text('Label', 'Zivilrecht')} />
+))

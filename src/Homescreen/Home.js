@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header'
-import Cards from './Cards'
+import Card from './Card'
 import styled from 'styled-components'
 
 const Wrapper = styled.main`
@@ -13,9 +13,9 @@ export default class Home extends Component {
     return (
       <Wrapper>
         <Header />
-        <Cards text="Zivilrecht" />
-        <Cards text="Öffentliches Recht" />
-        <Cards text="Strafrecht" />
+        <Card text="Zivilrecht" />
+        <Card text="Öffentliches Recht" />
+        <Card text="Strafrecht" />
       </Wrapper>
     )
   }
