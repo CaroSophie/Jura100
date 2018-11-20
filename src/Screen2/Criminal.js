@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 const Wrapper = styled.section`
   height: 100vh;
-  background: whitesmoke;
   display: grid;
   grid-gap: 20px;
   padding: 20px;
+  background: whitesmoke;
 `
 const Categories = styled.div`
   background: lightgrey;

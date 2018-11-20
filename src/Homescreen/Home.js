@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 const Wrapper = styled.main`
-  display: grid;
   background: whitesmoke;
 
   a:any-link {
