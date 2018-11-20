@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Card from './Card'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
 const Wrapper = styled.main`
   display: grid;
@@ -13,7 +14,9 @@ export default class Home extends Component {
     return (
       <Wrapper>
         <Header />
-        <Card text="Zivilrecht" />
+        <NavLink to="/Zivilrecht">
+          <Card text="Zivilrecht" />
+        </NavLink>
         <Card text="Öffentliches Recht" />
         <Card text="Strafrecht" />
       </Wrapper>
