@@ -7,6 +7,10 @@ import { NavLink } from 'react-router-dom'
 const Wrapper = styled.main`
   display: grid;
   background: whitesmoke;
+
+  a:any-link {
+    text-decoration: none;
+  }
 `
 
 export default class Home extends Component {
@@ -14,11 +18,15 @@ export default class Home extends Component {
     return (
       <Wrapper>
         <Header />
-        <NavLink to="/Zivilrecht">
+        <NavLink to="/Private">
           <Card text="Zivilrecht" />
         </NavLink>
-        <Card text="Öffentliches Recht" />
-        <Card text="Strafrecht" />
+        <NavLink to="/Public">
+          <Card text="Öffentliches Recht" />
+        </NavLink>
+        <NavLink to="/Criminal">
+          <Card text="Strafrecht" />
+        </NavLink>
       </Wrapper>
     )
   }
