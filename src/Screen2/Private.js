@@ -4,9 +4,7 @@ import Bookmark from './Bookmark'
 
 const Wrapper = styled.section`
   background: whitesmoke;
-  display: grid;
-  grid-gap: 20px;
-  padding: 20px;
+  padding: 15px;
 `
 
 const Categories = styled.div`
