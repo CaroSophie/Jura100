@@ -11,6 +11,6 @@ const Icon = styled.div`
 
 export default class Bookmark extends Component {
   render() {
-    return <Icon />
+    return <Icon onClick={this.props.handleIcon}> </Icon>
   }
 }
