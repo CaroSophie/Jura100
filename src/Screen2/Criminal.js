@@ -3,10 +3,7 @@ import styled from 'styled-components'
 import Bookmark from './Bookmark'
 
 const Wrapper = styled.section`
-  height: 100vh;
-  display: grid;
-  grid-gap: 20px;
-  padding: 20px;
+  padding: 15px;
   background: whitesmoke;
 `
 const Categories = styled.div`
@@ -25,39 +22,7 @@ export default class Criminal extends Component {
     return (
       <Wrapper>
         <Categories>
-          Strafrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Strafprozessrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Familienrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Vertragsrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Schuldrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Sachenrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Verwaltungsrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Verwaltungsrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Verwaltungsrecht
+          {this.props.text}
           <Bookmark />
         </Categories>
       </Wrapper>

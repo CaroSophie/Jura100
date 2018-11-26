@@ -3,11 +3,8 @@ import styled from 'styled-components'
 import Bookmark from './Bookmark'
 
 const Wrapper = styled.section`
-  height: 100vh;
   background: whitesmoke;
-  display: grid;
-  grid-gap: 20px;
-  padding: 20px;
+  padding: 15px;
 `
 
 const Categories = styled.div`
@@ -26,38 +23,7 @@ export default class Private extends Component {
     return (
       <Wrapper>
         <Categories>
-          Arbeitsrecht <Bookmark />
-        </Categories>
-        <Categories>
-          Erbrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Familienrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Vertragsrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Schuldrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Sachenrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Arbeitsrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Arbeitsrecht
-          <Bookmark />
-        </Categories>
-        <Categories>
-          Arbeitsrecht
+          {this.props.text}
           <Bookmark />
         </Categories>
       </Wrapper>
