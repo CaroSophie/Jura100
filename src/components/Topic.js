@@ -7,7 +7,7 @@ const Wrapper = styled.section`
   padding: 15px;
 `
 
-const Categories = styled.div`
+const Topics = styled.div`
   background: lightgrey;
   color: black;
   height: 50px;
@@ -18,14 +18,15 @@ const Categories = styled.div`
   box-shadow: 2px 2px 5px black;
 `
 
-export default class Private extends Component {
+export default class Topic extends Component {
   render() {
+    const { handleBookmark, marked } = this.props
     return (
       <Wrapper>
-        <Categories>
+        <Topics>
           {this.props.text}
-          <Bookmark />
-        </Categories>
+          <Bookmark marked={marked} handleOnClick={handleBookmark} />
+        </Topics>
       </Wrapper>
     )
   }

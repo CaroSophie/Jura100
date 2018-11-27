@@ -14,7 +14,7 @@ const Heading = styled.h1`
   text-transform: uppercase;
 `
 
-export default class Home extends Component {
+export default class Header extends Component {
   render() {
     return <Heading>Jura 100</Heading>
   }

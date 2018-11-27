@@ -15,10 +15,6 @@ const Stylecards = styled.section`
 
 export default class Cards extends Component {
   render() {
-    return (
-      <main>
-        <Stylecards>{this.props.text}</Stylecards>
-      </main>
-    )
+    return <Stylecards>{this.props.text}</Stylecards>
   }
 }

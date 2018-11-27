@@ -7,10 +7,19 @@ const Icon = styled.div`
   border: 2px solid black;
   font-size: 1em;
   margin-left: auto;
+
+  &.marked {
+    background: red;
+  }
 `
 
 export default class Bookmark extends Component {
   render() {
-    return <Icon> </Icon>
+    return (
+      <Icon
+        onClick={this.props.handleOnClick}
+        className={this.props.marked ? 'marked' : ''}
+      />
+    )
   }
 }

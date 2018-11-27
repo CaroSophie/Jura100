@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Header from './Header'
-import Card from './Card'
+import Header from '../components/Header'
+import Card from '../components/Card'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
