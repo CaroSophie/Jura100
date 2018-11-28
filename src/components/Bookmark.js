@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Icon = styled.div`
-  height: 20px;
-  width: 20px;
   border: 2px solid black;
-  font-size: 1em;
+  font-size: 2em;
   margin-left: auto;
+  width: 40px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 
   &.marked {
     background: red;
@@ -19,7 +21,9 @@ export default class Bookmark extends Component {
       <Icon
         onClick={this.props.handleOnClick}
         className={this.props.marked ? 'marked' : ''}
-      />
+      >
+        {'*'}
+      </Icon>
     )
   }
 }

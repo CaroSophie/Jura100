@@ -8,49 +8,202 @@ import SubPage from '../screens/SubPage'
 export default class App extends Component {
   state = {
     topics: [
-      { text: 'Arbeitsrecht', marked: false, id: uid(), area: 'private' },
-      { text: 'Erbrecht', marked: false, id: uid(), area: 'private' },
-      { text: 'Familienrecht', marked: false, id: uid(), area: 'private' },
-      { text: 'Schuldrecht', marked: false, id: uid(), area: 'private' },
-      { text: 'Sachenrecht', marked: false, id: uid(), area: 'private' },
-      { text: 'Vertragsrecht', marked: false, id: uid(), area: 'private' },
-      { text: 'Verwaltungsrecht', marked: false, id: uid(), area: 'public' },
-      { text: 'Baurecht', marked: false, id: uid(), area: 'public' },
-      { text: 'Polizeirecht', marked: false, id: uid(), area: 'public' },
+      {
+        text: 'Arbeitsrecht',
+        marked: false,
+        id: uid(),
+        area: 'private',
+        done: false
+      },
+      {
+        text: 'Erbrecht',
+        marked: false,
+        id: uid(),
+        area: 'private',
+        done: false
+      },
+      {
+        text: 'Familienrecht',
+        marked: false,
+        id: uid(),
+        area: 'private',
+        done: false
+      },
+      {
+        text: 'Schuldrecht',
+        marked: false,
+        id: uid(),
+        area: 'private',
+        done: false
+      },
+      {
+        text: 'Sachenrecht',
+        marked: false,
+        id: uid(),
+        area: 'private',
+        done: false
+      },
+      {
+        text: 'Vertragsrecht',
+        marked: false,
+        id: uid(),
+        area: 'private',
+        done: false
+      },
+      {
+        text: 'Verwaltungsrecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
+      {
+        text: 'Baurecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
+      {
+        text: 'Polizeirecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
       {
         text: 'Wirtschaftsverwaltungsrecht',
         marked: false,
         id: uid(),
-        area: 'public'
+        area: 'public',
+        done: false
       },
-      { text: 'Verwaltungsrecht', marked: false, id: uid(), area: 'public' },
-      { text: 'Baurecht', marked: false, id: uid(), area: 'public' },
-      { text: 'Polizeirecht', marked: false, id: uid(), area: 'public' },
+      {
+        text: 'Verwaltungsrecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
+      {
+        text: 'Baurecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
+      {
+        text: 'Polizeirecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
       {
         text: 'Wirtschaftsverwaltungsrecht',
         marked: false,
         id: uid(),
-        area: 'public'
+        area: 'public',
+        done: false
       },
-      { text: 'Verwaltungsrecht', marked: false, id: uid(), area: 'public' },
-      { text: 'Baurecht', marked: false, id: uid(), area: 'public' },
-      { text: 'Polizeirecht', marked: false, id: uid(), area: 'public' },
+      {
+        text: 'Verwaltungsrecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
+      {
+        text: 'Baurecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
+      {
+        text: 'Polizeirecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
       {
         text: 'Wirtschaftsverwaltungsrecht',
         marked: false,
         id: uid(),
-        area: 'public'
+        area: 'public',
+        done: false
       },
-      { text: 'Umweltrecht', marked: false, id: uid(), area: 'public' },
-      { text: 'Strafrecht AT', marked: false, id: uid(), area: 'criminal' },
-      { text: 'Strafrecht BT', marked: false, id: uid(), area: 'criminal' },
-      { text: 'Strafrecht AT', marked: false, id: uid(), area: 'criminal' },
-      { text: 'Strafrecht BT', marked: false, id: uid(), area: 'criminal' },
-      { text: 'Strafrecht AT', marked: false, id: uid(), area: 'criminal' },
-      { text: 'Strafrecht BT', marked: false, id: uid(), area: 'criminal' },
-      { text: 'Strafrecht AT', marked: false, id: uid(), area: 'criminal' },
-      { text: 'Strafrecht BT', marked: false, id: uid(), area: 'criminal' },
-      { text: 'Strafprozessrecht', marked: false, id: uid(), area: 'criminal' }
+      {
+        text: 'Umweltrecht',
+        marked: false,
+        id: uid(),
+        area: 'public',
+        done: false
+      },
+      {
+        text: 'Strafrecht AT',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      },
+      {
+        text: 'Strafrecht BT',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      },
+      {
+        text: 'Strafrecht AT',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      },
+      {
+        text: 'Strafrecht BT',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      },
+      {
+        text: 'Strafrecht AT',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      },
+      {
+        text: 'Strafrecht BT',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      },
+      {
+        text: 'Strafrecht AT',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      },
+      {
+        text: 'Strafrecht BT',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      },
+      {
+        text: 'Strafprozessrecht',
+        marked: false,
+        id: uid(),
+        area: 'criminal',
+        done: false
+      }
     ]
   }
 
