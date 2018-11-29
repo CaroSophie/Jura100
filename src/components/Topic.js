@@ -4,12 +4,12 @@ import Bookmark from './Bookmark'
 import Checkbox from './Checkbox'
 
 const Wrapper = styled.section`
-  background: whitesmoke;
+  background: lightgrey;
   padding: 15px;
 `
 
 const Topics = styled.div`
-  background: lightgrey;
+  background: white;
   color: black;
   height: 50px;
   text-align: start;
@@ -17,21 +17,18 @@ const Topics = styled.div`
   align-items: center;
   padding: 10px;
   box-shadow: 2px 2px 5px black;
-
-  .done {
-    text-decoration: line-through;
-  }
+  font-size: 2em;
 `
 
 export default class Topic extends Component {
   render() {
-    const { handleBookmark, marked, done, onToggle } = this.props
+    const { handleBookmark, marked, done, handleToggle } = this.props
     return (
       <Wrapper>
         <Topics>
+          <Checkbox done={done} onToggle={handleToggle} />
           {this.props.text}
           <Bookmark marked={marked} handleOnClick={handleBookmark} />
-          <Checkbox className={done ? 'done' : ''} onClick={onToggle} />
         </Topics>
       </Wrapper>
     )

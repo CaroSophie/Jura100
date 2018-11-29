@@ -2,16 +2,16 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Icon = styled.div`
-  border: 2px solid black;
-  font-size: 2em;
+  font-size: 1em;
   margin-left: auto;
-  width: 40px;
   display: grid;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 
   &.marked {
-    background: red;
+    color: red;
+    font-size: 2em;
   }
 `
 

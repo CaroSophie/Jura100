@@ -72,7 +72,7 @@ export default class App extends Component {
         done: false
       },
       {
-        text: 'Wirtschaftsverwaltungsrecht',
+        text: 'WirtschaftsverwRecht',
         marked: false,
         id: uid(),
         area: 'public',
@@ -100,7 +100,7 @@ export default class App extends Component {
         done: false
       },
       {
-        text: 'Wirtschaftsverwaltungsrecht',
+        text: 'WirtschaftsverwRecht',
         marked: false,
         id: uid(),
         area: 'public',
@@ -128,7 +128,7 @@ export default class App extends Component {
         done: false
       },
       {
-        text: 'Wirtschaftsverwaltungsrecht',
+        text: 'WirtschaftsverwRecht',
         marked: false,
         id: uid(),
         area: 'public',
@@ -221,6 +221,20 @@ export default class App extends Component {
     })
   }
 
+  toggleDone = id => {
+    const { topics } = this.state
+    const index = topics.findIndex(done => done.id === id)
+    const toggleDone = [
+      ...topics.slice(0, index),
+      { ...topics[index], done: !topics[index].done },
+      ...topics.slice(index + 1)
+    ]
+
+    this.setState({
+      topics: toggleDone
+    })
+  }
+
   render() {
     return (
       <Router>
@@ -234,6 +248,7 @@ export default class App extends Component {
                   topic => topic.area === 'private'
                 )}
                 bookmark={this.fillBookmarkIcon}
+                checked={this.toggleDone}
               />
             )}
           />

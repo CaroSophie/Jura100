@@ -5,7 +5,8 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 const Wrapper = styled.main`
-  background: whitesmoke;
+  background: lightgrey;
+  height: 100vh;
 
   a:any-link {
     text-decoration: none;

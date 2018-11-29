@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Stylecards = styled.section`
   height: 150px;
-  background: lightgrey;
+  background: white;
   color: black;
   margin: 30px;
   display: grid;
