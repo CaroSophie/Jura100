@@ -8,7 +8,6 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 library.add(faBookmark)
 
 const Icon = styled.div`
-  font-size: 1em;
   margin-left: auto;
   display: grid;
   justify-content: center;

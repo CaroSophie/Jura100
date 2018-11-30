@@ -23,6 +23,7 @@ const Navbar = styled.footer`
   }
   .svg-inline--fa {
     height: 4em;
+    color: white;
   }
 
   .svg-inline--fa.fa-w-12 {

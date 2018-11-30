@@ -17,7 +17,7 @@ const Topics = styled.div`
   align-items: center;
   padding: 10px;
   box-shadow: 2px 2px 5px black;
-  font-size: 2em;
+  font-size: 1em;
 `
 
 export default class Topic extends Component {
