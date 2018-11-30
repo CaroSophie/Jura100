@@ -22,13 +22,15 @@ const Topics = styled.div`
 
 export default class Topic extends Component {
   render() {
-    const { handleBookmark, marked, done, handleToggle } = this.props
+    const { handleBookmark, marked, done, handleToggle, hideIcons } = this.props
     return (
       <Wrapper>
         <Topics>
-          <Checkbox done={done} onToggle={handleToggle} />
+          {hideIcons ? <Checkbox done={done} onToggle={handleToggle} /> : null}
           {this.props.text}
-          <Bookmark marked={marked} handleOnClick={handleBookmark} />
+          {hideIcons ? (
+            <Bookmark marked={marked} handleOnClick={handleBookmark} />
+          ) : null}
         </Topics>
       </Wrapper>
     )

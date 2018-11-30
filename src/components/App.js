@@ -249,6 +249,7 @@ export default class App extends Component {
                 )}
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
+                handleHiding={true}
               />
             )}
           />
@@ -261,6 +262,7 @@ export default class App extends Component {
                 )}
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
+                handleHiding={true}
               />
             )}
           />
@@ -273,6 +275,7 @@ export default class App extends Component {
                 )}
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
+                handleHiding={true}
               />
             )}
           />
@@ -283,6 +286,7 @@ export default class App extends Component {
                 topics={this.state.topics.filter(topic => topic.marked)}
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
+                handleHiding={false}
               />
             )}
           />
@@ -293,6 +297,7 @@ export default class App extends Component {
                 topics={this.state.topics.filter(topic => topic.done)}
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
+                handleHiding={false}
               />
             )}
           />

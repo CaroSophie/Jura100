@@ -20,4 +20,13 @@ storiesOf('Card', module).add('Rechtsgebiete', () => (
   <Card text={text('Label', 'Zivilrecht')} />
 ))
 
-storiesOf('Topic', module).add('Topic', () => <Topic />)
+storiesOf('Topic', module).add('Topic', () => (
+  <Topic
+    handleToggle={action('check topics')}
+    handleBookmark={action('mark topics')}
+  />
+))
+
+storiesOf('Footer', module).add('default', () => (
+  <Footer text={text('Icon', 'Bookmark')} />
+))
