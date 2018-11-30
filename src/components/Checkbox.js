@@ -2,8 +2,14 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Checkbutton = styled.input`
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+
+  &.done {
+    width: 30px;
+    height: 30px;
+  }
 `
 
 export default class Checkbox extends Component {

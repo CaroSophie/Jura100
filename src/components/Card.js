@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Stylecards = styled.section`
-  height: 150px;
+  height: 100px;
   background: white;
   color: black;
   margin: 30px;
@@ -10,7 +10,8 @@ const Stylecards = styled.section`
   align-items: center;
   text-align: center;
   box-shadow: 2px 2px 5px black;
-  font-size: 3em;
+  font-size: 2em;
+  border-radius: 20px;
 `
 
 export default class Cards extends Component {

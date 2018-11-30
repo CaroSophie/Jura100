@@ -283,6 +283,7 @@ export default class App extends Component {
             path="/marked"
             render={() => (
               <SubPage
+                // headerText=''
                 topics={this.state.topics.filter(topic => topic.marked)}
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}

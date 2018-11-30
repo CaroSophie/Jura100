@@ -4,7 +4,6 @@ import Bookmark from './Bookmark'
 import Checkbox from './Checkbox'
 
 const Wrapper = styled.section`
-  background: lightgrey;
   padding: 15px;
 `
 
@@ -18,6 +17,8 @@ const Topics = styled.div`
   padding: 10px;
   box-shadow: 2px 2px 5px black;
   font-size: 1em;
+  border-radius: 10px;
+  font-weight: bold;
 `
 
 export default class Topic extends Component {

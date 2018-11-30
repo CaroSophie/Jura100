@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 const Wrapper = styled.main`
-  background: lightgrey;
+  background: linear-gradient(0.4turn, #000000, #a6aade);
   height: 100vh;
 
   a:any-link {

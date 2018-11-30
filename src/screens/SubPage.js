@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.section`
   min-height: 100vh;
+  background: linear-gradient(0.4turn, #000000, #a6aade);
 `
 
 export default class SubPage extends Component {
