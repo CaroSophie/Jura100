@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = styled.footer`
   background: #595959;
   margin: 0;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   color: black;
   display: flex;
