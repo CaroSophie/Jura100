@@ -2,30 +2,32 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClipboardCheck, faBookmark } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faClipboardCheck, faBookmark)
+
 const Navbar = styled.footer`
   background: #595959;
-  margin: 0;
   position: fixed;
   bottom: 0;
-  color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
+  color: white;
 
   a:any-link {
     text-decoration: none;
   }
-`
+  .svg-inline--fa {
+    height: 4em;
+  }
 
-const Menu = styled.div`
-  width: 30px;
-  height: 30px;
-  background: white;
-  margin: 5px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  .svg-inline--fa.fa-w-12 {
+    width: 2em;
+  }
 `
 
 export default class Footer extends Component {
@@ -33,10 +35,10 @@ export default class Footer extends Component {
     return (
       <Navbar>
         <NavLink to="/checked">
-          <Menu>{'!'}</Menu>
+          <FontAwesomeIcon icon="clipboard-check" />
         </NavLink>
         <NavLink to="/marked">
-          <Menu>{'*'}</Menu>
+          <FontAwesomeIcon icon="bookmark" />
         </NavLink>
       </Navbar>
     )

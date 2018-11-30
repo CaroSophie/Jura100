@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faBookmark)
+
 const Icon = styled.div`
   font-size: 1em;
   margin-left: auto;
@@ -22,7 +28,7 @@ export default class Bookmark extends Component {
         onClick={this.props.handleOnClick}
         className={this.props.marked ? 'marked' : ''}
       >
-        {'*'}
+        <FontAwesomeIcon icon="bookmark" />
       </Icon>
     )
   }

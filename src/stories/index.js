@@ -8,6 +8,7 @@ import StyleBox from './StyleBox'
 import Header from '../components/Header'
 import Card from '../components/Card'
 import Topic from '../components/Topic'
+import Footer from '../components/Footer'
 
 storiesOf('Header', module).add('default', () => (
   <React.Fragment>
