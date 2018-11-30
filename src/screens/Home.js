@@ -19,13 +19,13 @@ export default class Home extends Component {
     return (
       <Wrapper>
         <Header />
-        <NavLink to="/Private">
+        <NavLink to="/private">
           <Card text="Zivilrecht" />
         </NavLink>
-        <NavLink to="/Public">
+        <NavLink to="/public">
           <Card text="Öffentliches Recht" />
         </NavLink>
-        <NavLink to="/Criminal">
+        <NavLink to="/criminal">
           <Card text="Strafrecht" />
         </NavLink>
         <Footer />

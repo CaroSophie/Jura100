@@ -260,6 +260,7 @@ export default class App extends Component {
                   topic => topic.area === 'public'
                 )}
                 bookmark={this.fillBookmarkIcon}
+                checked={this.toggleDone}
               />
             )}
           />
@@ -271,6 +272,27 @@ export default class App extends Component {
                   topic => topic.area === 'criminal'
                 )}
                 bookmark={this.fillBookmarkIcon}
+                checked={this.toggleDone}
+              />
+            )}
+          />
+          <Route
+            path="/marked"
+            render={() => (
+              <SubPage
+                topics={this.state.topics.filter(topic => topic.marked)}
+                bookmark={this.fillBookmarkIcon}
+                checked={this.toggleDone}
+              />
+            )}
+          />
+          <Route
+            path="/checked"
+            render={() => (
+              <SubPage
+                topics={this.state.topics.filter(topic => topic.done)}
+                bookmark={this.fillBookmarkIcon}
+                checked={this.toggleDone}
               />
             )}
           />

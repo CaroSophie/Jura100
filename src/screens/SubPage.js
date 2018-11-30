@@ -17,6 +17,7 @@ export default class SubPage extends Component {
             key={topic.id}
             marked={topic.marked}
             done={topic.done}
+            // showCheckbox={true}
             handleBookmark={() => this.props.bookmark(topic.id)}
             handleToggle={() => this.props.checked(topic.id)}
           />
