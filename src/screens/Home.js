@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import Card from '../components/Card'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
@@ -27,6 +28,7 @@ export default class Home extends Component {
         <NavLink to="/Criminal">
           <Card text="Strafrecht" />
         </NavLink>
+        <Footer />
       </Wrapper>
     )
   }

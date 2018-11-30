@@ -18,6 +18,10 @@ const Topics = styled.div`
   padding: 10px;
   box-shadow: 2px 2px 5px black;
   font-size: 2em;
+
+  &.done {
+    text-decoration: line-through;
+  }
 `
 
 export default class Topic extends Component {

@@ -5,6 +5,7 @@ export default createGlobalStyle`
 
 
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background: lightgrey;
