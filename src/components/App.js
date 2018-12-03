@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import uid from 'uid'
 
 import Home from '../screens/Home'
 import SubPage from '../screens/SubPage'
-import Defaulttopics from '../data/Defaulttopics'
+import defaulttopics from '../data/defaulttopics'
 
 export default class App extends Component {
   state = {
-    todos: this.load() || <Defaulttopics />
+    topics: this.load()
   }
 
   fillBookmarkIcon = id => {
@@ -40,6 +39,7 @@ export default class App extends Component {
   }
 
   render() {
+    console.log(this.state)
     this.save()
     return (
       <Router>
@@ -117,7 +117,9 @@ export default class App extends Component {
 
   load() {
     try {
-      return JSON.parse(localStorage.getItem('jura-app-topics')) || []
+      return (
+        JSON.parse(localStorage.getItem('jura-app-topics')) || defaulttopics
+      )
     } catch (err) {
       return []
     }
