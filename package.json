@@ -29,6 +29,7 @@
     "babel-plugin-jsx-remove-data-test-id": "^1.2.1",
     "babel-plugin-styled-components": "1.8.0",
     "react": "^16.6.1",
+    "react-circular-progressbar": "^1.0.0",
     "react-dom": "^16.6.1",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.1",
