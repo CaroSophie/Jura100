@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
+import Progressbar from '../components/Progressbar'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ export default class Home extends Component {
     return (
       <Wrapper>
         <Header />
+        <Progressbar percentage={this.props.showprogress} />
         <NavLink to="/private">
           <Card text="Zivilrecht" />
         </NavLink>
@@ -28,6 +30,7 @@ export default class Home extends Component {
         <NavLink to="/criminal">
           <Card text="Strafrecht" />
         </NavLink>
+
         <Footer />
       </Wrapper>
     )

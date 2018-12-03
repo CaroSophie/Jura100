@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Home from '../screens/Home'
 import SubPage from '../screens/SubPage'
-import defaulttopics from '../data/defaulttopics'
+import Defaulttopics from '../data/Defaulttopics'
 
 export default class App extends Component {
   state = {
@@ -38,13 +38,22 @@ export default class App extends Component {
     })
   }
 
+  showProgress() {
+    const { topics } = this.state
+    const doneTopics = topics.filter(t => t.done)
+    return doneTopics.length / topics.length
+  }
+
   render() {
-    console.log(this.state)
     this.save()
     return (
       <Router>
         <div>
-          <Route exact path="/" render={() => <Home />} />
+          <Route
+            exact
+            path="/"
+            render={() => <Home showprogress={this.showProgress()} />}
+          />
           <Route
             path="/private"
             render={() => (
@@ -118,7 +127,7 @@ export default class App extends Component {
   load() {
     try {
       return (
-        JSON.parse(localStorage.getItem('jura-app-topics')) || defaulttopics
+        JSON.parse(localStorage.getItem('jura-app-topics')) || Defaulttopics
       )
     } catch (err) {
       return []

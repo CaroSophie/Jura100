@@ -9,7 +9,7 @@ const Stylecards = styled.section`
   display: grid;
   align-items: center;
   text-align: center;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 2px black;
   font-size: 2em;
   border-radius: 20px;
 `
