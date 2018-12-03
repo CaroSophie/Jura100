@@ -12,10 +12,11 @@ const Heading = styled.h1`
   position: sticky;
   top: 0;
   text-transform: uppercase;
+  font-size: 1em;
 `
 
 export default class Header extends Component {
   render() {
-    return <Heading>Jura 100</Heading>
+    return <Heading>Willkommen bei: Jura 100</Heading>
   }
 }

@@ -18,6 +18,7 @@ export default class Checkbox extends Component {
       <Checkbutton
         type="checkbox"
         onClick={this.props.onToggle}
+        checked={this.props.done ? true : false}
         className={this.props.done ? 'done' : ''}
       />
     )
