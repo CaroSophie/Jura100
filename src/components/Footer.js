@@ -18,12 +18,13 @@ const Navbar = styled.footer`
   bottom: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   color: white;
 
   a:any-link {
     text-decoration: none;
+    padding: 8px;
   }
   .svg-inline--fa {
     height: 4em;
