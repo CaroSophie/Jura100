@@ -19,7 +19,7 @@ const Navbar = styled.footer`
   bottom: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   color: white;
 
@@ -29,15 +29,14 @@ const Navbar = styled.footer`
     margin: 5px;
   }
   .svg-inline--fa {
-    height: 4em;
     color: white;
+    height: 2em;
   }
-
   .svg-inline--fa.fa-w-12 {
-    width: 2em;
+    width: 1em;
   }
   .svg-inline--fa.fa-w-14 {
-    width: 2em;
+    width: 1em;
   }
 `
 
