@@ -13,7 +13,8 @@ import {
 library.add(faBars, faClipboardCheck, faBookmark)
 
 const Navbar = styled.footer`
-  background: #595959;
+  /* background: #595959; */
+  background: black;
   position: fixed;
   bottom: 0;
   display: flex;
@@ -24,7 +25,8 @@ const Navbar = styled.footer`
 
   a:any-link {
     text-decoration: none;
-    padding: 8px;
+    padding: 5px;
+    margin: 5px;
   }
   .svg-inline--fa {
     height: 4em;
@@ -43,11 +45,11 @@ export default class Footer extends Component {
   render() {
     return (
       <Navbar>
-        <NavLink to="/">
-          <FontAwesomeIcon icon="bars" />
-        </NavLink>
         <NavLink to="/checked">
           <FontAwesomeIcon icon="clipboard-check" />
+        </NavLink>
+        <NavLink to="/">
+          <FontAwesomeIcon icon="bars" />
         </NavLink>
         <NavLink to="/marked">
           <FontAwesomeIcon icon="bookmark" />

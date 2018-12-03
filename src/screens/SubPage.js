@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Topic from '../components/Topic'
 import Footer from '../components/Footer'
+import Overview from '../components/Overview'
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
@@ -12,6 +13,7 @@ export default class SubPage extends Component {
   render() {
     return (
       <Wrapper>
+        <Overview showRoute={this.props.getRoute} />
         {this.props.topics.map(topic => (
           <Topic
             text={topic.text}
