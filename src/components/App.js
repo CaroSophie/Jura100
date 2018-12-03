@@ -64,6 +64,7 @@ export default class App extends Component {
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
                 handleHiding={true}
+                getRoute="Zivilrecht"
               />
             )}
           />
@@ -77,6 +78,7 @@ export default class App extends Component {
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
                 handleHiding={true}
+                getRoute="Öffentliches Recht"
               />
             )}
           />
@@ -90,6 +92,7 @@ export default class App extends Component {
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
                 handleHiding={true}
+                getRoute="Strafrecht"
               />
             )}
           />
@@ -97,11 +100,11 @@ export default class App extends Component {
             path="/marked"
             render={() => (
               <SubPage
-                // headerText=''
                 topics={this.state.topics.filter(topic => topic.marked)}
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
                 handleHiding={false}
+                getRoute="Wichtige Themen"
               />
             )}
           />
@@ -113,6 +116,7 @@ export default class App extends Component {
                 bookmark={this.fillBookmarkIcon}
                 checked={this.toggleDone}
                 handleHiding={false}
+                getRoute="Gelernte Themen"
               />
             )}
           />

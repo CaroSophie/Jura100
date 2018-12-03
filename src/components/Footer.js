@@ -4,22 +4,29 @@ import { NavLink } from 'react-router-dom'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClipboardCheck, faBookmark } from '@fortawesome/free-solid-svg-icons'
+import {
+  faBars,
+  faClipboardCheck,
+  faBookmark
+} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faClipboardCheck, faBookmark)
+library.add(faBars, faClipboardCheck, faBookmark)
 
 const Navbar = styled.footer`
-  background: #595959;
+  /* background: #595959; */
+  background: black;
   position: fixed;
   bottom: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   color: white;
 
   a:any-link {
     text-decoration: none;
+    padding: 5px;
+    margin: 5px;
   }
   .svg-inline--fa {
     height: 4em;
@@ -27,6 +34,9 @@ const Navbar = styled.footer`
   }
 
   .svg-inline--fa.fa-w-12 {
+    width: 2em;
+  }
+  .svg-inline--fa.fa-w-14 {
     width: 2em;
   }
 `
@@ -37,6 +47,9 @@ export default class Footer extends Component {
       <Navbar>
         <NavLink to="/checked">
           <FontAwesomeIcon icon="clipboard-check" />
+        </NavLink>
+        <NavLink to="/">
+          <FontAwesomeIcon icon="bars" />
         </NavLink>
         <NavLink to="/marked">
           <FontAwesomeIcon icon="bookmark" />

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Stylecards = styled.section`
-  height: 100px;
+  height: 80px;
   background: white;
   color: black;
   margin: 30px;

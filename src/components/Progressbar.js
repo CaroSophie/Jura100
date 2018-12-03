@@ -3,9 +3,8 @@ import styled from 'styled-components'
 
 const Progress = styled.div`
   background: lightgrey;
-  margin: 5px;
+  margin: 10px;
   margin-top: 20px;
-  display: -webkit-box;
   border-radius: 10px 10px 10px;
   border: 5px solid white;
   color: red;
@@ -13,13 +12,14 @@ const Progress = styled.div`
   text-align: start;
   font-weight: bold;
   padding: 2px;
+  font-size: 20px;
 
   &::after {
     content: '';
     display: block;
     width: ${props => props.percentage * 100}%;
-    background: blue;
-    height: 30px;
+    background: darkgrey;
+    height: 50px;
     margin-top: 10px;
     border-radius: inherit;
   }
