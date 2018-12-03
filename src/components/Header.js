@@ -17,6 +17,6 @@ const Heading = styled.h1`
 
 export default class Header extends Component {
   render() {
-    return <Heading>Willkommen bei: Jura 100</Heading>
+    return <Heading>§§ Jura 100 </Heading>
   }
 }

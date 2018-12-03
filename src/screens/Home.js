@@ -3,6 +3,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
 import Progressbar from '../components/Progressbar'
+import Profile from '../components/Profile'
+import Instruction from '../components/Instruction'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
@@ -14,23 +16,29 @@ const Wrapper = styled.main`
     text-decoration: none;
   }
 `
+const Cardcontainer = styled.div`
+  margin: 30px;
+`
 
 export default class Home extends Component {
   render() {
     return (
       <Wrapper>
         <Header />
+        <Profile />
         <Progressbar percentage={this.props.showprogress} />
-        <NavLink to="/private">
-          <Card text="Zivilrecht" />
-        </NavLink>
-        <NavLink to="/public">
-          <Card text="Öffentliches Recht" />
-        </NavLink>
-        <NavLink to="/criminal">
-          <Card text="Strafrecht" />
-        </NavLink>
-
+        <Instruction />
+        <Cardcontainer>
+          <NavLink to="/private">
+            <Card text="Zivilrecht" />
+          </NavLink>
+          <NavLink to="/public">
+            <Card text="Öffentliches Recht" />
+          </NavLink>
+          <NavLink to="/criminal">
+            <Card text="Strafrecht" />
+          </NavLink>
+        </Cardcontainer>
         <Footer />
       </Wrapper>
     )
