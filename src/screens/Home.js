@@ -22,12 +22,18 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 `
+const Line = styled.div`
+  width: 100%;
+  height: 2px;
+  background: white;
+`
 
 export default class Home extends Component {
   render() {
     return (
       <Wrapper>
         <Header />
+        <Line />
         <Welcome />
         <Progressbar percentage={this.props.showprogress} />
         <Container>

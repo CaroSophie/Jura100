@@ -2,26 +2,25 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Progress = styled.div`
-  background: lightgrey;
-  border-radius: 10px 10px 10px;
-  border: 5px solid white;
-  color: red;
+  background: whitesmoke;
+  color: darkgreen;
   display: grid;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
   margin-top: 20px;
-  margin: 10px;
+  margin: 40px;
   padding: 2px;
+  box-shadow: 2px 2px 2px grey;
 
   &::after {
     content: '';
     display: block;
     width: ${props => props.percentage * 100}%;
-    background: darkgrey;
-    height: 50px;
+    background: lightgrey;
+    height: 10px;
     margin-top: 10px;
-    border-radius: inherit;
+    border-radius: 30px;
   }
 `
 class Progressbar extends Component {

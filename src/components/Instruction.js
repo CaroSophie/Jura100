@@ -6,10 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBookmark,
   faInfo,
-  faClipboardCheck
+  faClipboardCheck,
+  faPercentage
 } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBookmark, faInfo, faClipboardCheck)
+library.add(faBookmark, faInfo, faClipboardCheck, faPercentage)
 
 const Wrapper = styled.div`
   align-items: center;
@@ -23,10 +24,10 @@ const Wrapper = styled.div`
 const Toggle = styled.button`
   border-radius: 50%;
   border: 2px solid lightseagreen;
-  color: black;
+  color: darkgreen;
   font-size: 1em;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 
   &:focus {
     outline: none;
@@ -37,9 +38,11 @@ const Toggle = styled.button`
   }
 `
 const Helptext = styled.div`
-  color: red;
+  color: black;
   background: whitesmoke;
-  border: 5px solid black;
+  border: 5px solid lightseagreen;
+  margin-right: 40px;
+  height: 150px;
 
   ul {
     list-style-type: none;
@@ -47,14 +50,15 @@ const Helptext = styled.div`
 
   .svg-inline--fa {
     color: black;
+    padding-right: 10px;
   }
 `
 
 const Closehelp = styled.button`
-  color: grey;
+  color: black;
   font-weight: bold;
-  border: 2px solid grey;
   background: white;
+  margin-left: 150px;
 
   &:focus {
     outline: none;
@@ -89,10 +93,11 @@ export default class Instruction extends Component {
             Speicher schon gelernte Themen ab!
           </li>
           <li>
+            <FontAwesomeIcon icon="percentage" />
             Beobachte deinen stets wachsenden prozentualen Lernerfolg!
-            <Closehelp onClick={this.props.handleToggleButton}>X</Closehelp>
           </li>
         </ul>
+        <Closehelp onClick={this.props.handleToggleButton}>X</Closehelp>
       </Helptext>
     )
   }
