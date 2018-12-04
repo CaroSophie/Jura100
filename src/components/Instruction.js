@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
 `
 
 const Toggle = styled.button`
@@ -38,9 +38,8 @@ const Toggle = styled.button`
 const Helptext = styled.div`
   color: black;
   background: whitesmoke;
-  border: 5px solid lightseagreen;
-  margin-right: 40px;
-  height: 150px;
+  border: 2px solid lightseagreen;
+  margin-right: 10px;
 
   ul {
     list-style-type: none;

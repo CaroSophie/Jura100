@@ -10,7 +10,7 @@ const Wrapper = styled.section`
   background: linear-gradient(0.4turn, #ff8100, #ffe213);
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px 40px auto 50px;
+  grid-template-rows: 40px 2px 40px auto 50px;
   /* min-height: 100vh; */
 
   main {
@@ -22,9 +22,9 @@ const Wrapper = styled.section`
 
 const Line = styled.div`
   width: 100%;
-  height: 2px;
+  /* height: 2px; */
   background: white;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 `
 
 export default class SubPage extends Component {
@@ -32,9 +32,9 @@ export default class SubPage extends Component {
     return (
       <Wrapper>
         <Header />
+        <Line />
         <Overview showRoute={this.props.getRoute} />
         <main>
-          <Line />
           {this.props.topics.map(topic => (
             <Topic
               text={topic.text}

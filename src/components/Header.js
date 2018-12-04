@@ -5,7 +5,6 @@ const Heading = styled.h1`
   color: white;
   background: lightseagreen;
   margin: 0;
-  height: 3em;
   display: grid;
   justify-content: center;
   align-items: center;
