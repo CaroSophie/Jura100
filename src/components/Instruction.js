@@ -1,17 +1,28 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faBookmark,
+  faInfo,
+  faClipboardCheck
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faBookmark, faInfo, faClipboardCheck)
+
 const Wrapper = styled.div`
   height: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 `
 
 const Toggle = styled.button`
-  color: white;
-  background: green;
+  color: black;
+  font-size: 1em;
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -26,15 +37,20 @@ const Toggle = styled.button`
 `
 const Helptext = styled.div`
   color: red;
-  font-weight: bold;
-  background: white;
+  background: whitesmoke;
   border: 5px solid black;
+
+  .svg-inline--fa {
+    color: black;
+    height: 1em;
+  }
 `
 
 const Closehelp = styled.button`
-  color: white;
+  color: grey;
   font-weight: bold;
-  background: grey;
+  border: 2px solid grey;
+  background: white;
 
   &:focus {
     outline: none;
@@ -49,7 +65,7 @@ export default class Instruction extends Component {
           onClick={this.props.handleToggleButton}
           className={this.props.showHelp ? 'active' : ''}
         >
-          HELP
+          <FontAwesomeIcon icon="info" />
         </Toggle>
         {this.props.showHelp ? this.renderHelp() : null}
       </Wrapper>
@@ -61,17 +77,15 @@ export default class Instruction extends Component {
       <Helptext>
         <ol>
           <li>
-            Verschaffe dir einen Überblick über alle relevanten Lernthemen!
+            Markiere dir wichtige Lernthemen!
+            <FontAwesomeIcon icon="bookmark" />
           </li>
           <li>
-            Markiere dir relevante Themen und solche, die du dir noch intensiv
-            anschauen musst.
+            Speicher schon gelernte Themen!
+            <FontAwesomeIcon icon="clipboard-check" />
           </li>
           <li>
-            Hake gelernte Themen ab und speicher sie dir in einer extra Seite!
-          </li>
-          <li>
-            Beobachte deinen stets wachsenden prozentualen Lernerfolg!{' '}
+            Beobachte deinen stets wachsenden prozentualen Lernerfolg!
             <Closehelp onClick={this.props.handleToggleButton}>X</Closehelp>
           </li>
         </ol>

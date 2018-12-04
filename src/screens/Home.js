@@ -21,7 +21,6 @@ const Cardcontainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  height: 300px;
 `
 
 export default class Home extends Component {
@@ -38,14 +37,14 @@ export default class Home extends Component {
           <NavLink to="/public">
             <Card text="Öffentliches Recht" />
           </NavLink>
-          <Instruction
-            handleToggleButton={this.props.onToggle}
-            showHelp={this.props.showHelp}
-          />
           <NavLink to="/criminal">
             <Card text="Strafrecht" />
           </NavLink>
         </Cardcontainer>
+        <Instruction
+          handleToggleButton={this.props.onToggle}
+          showHelp={this.props.showHelp}
+        />
         <Footer />
       </Wrapper>
     )

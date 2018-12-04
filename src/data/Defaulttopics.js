@@ -2,28 +2,21 @@ import uid from 'uid'
 
 export default [
   {
-    text: 'Arbeitsrecht',
+    text: 'BGB AT',
     marked: false,
     id: uid(),
     area: 'private',
     done: false
   },
   {
-    text: 'Erbrecht',
+    text: 'Schuldrecht AT',
     marked: false,
     id: uid(),
     area: 'private',
     done: false
   },
   {
-    text: 'Familienrecht',
-    marked: false,
-    id: uid(),
-    area: 'private',
-    done: false
-  },
-  {
-    text: 'Schuldrecht',
+    text: 'Schuldrecht BT',
     marked: false,
     id: uid(),
     area: 'private',
@@ -37,70 +30,56 @@ export default [
     done: false
   },
   {
-    text: 'Vertragsrecht',
+    text: 'Kreditsicherungsrecht',
     marked: false,
     id: uid(),
     area: 'private',
     done: false
   },
   {
-    text: 'Verwaltungsrecht',
+    text: 'Familienrecht',
+    marked: false,
+    id: uid(),
+    area: 'private',
+    done: false
+  },
+  {
+    text: 'Erbrecht',
+    marked: false,
+    id: uid(),
+    area: 'private',
+    done: false
+  },
+  {
+    text: 'Gesellschaftsrecht',
+    marked: false,
+    id: uid(),
+    area: 'private',
+    done: false
+  },
+  {
+    text: 'Handelsrecht',
+    marked: false,
+    id: uid(),
+    area: 'private',
+    done: false
+  },
+  {
+    text: 'Grundrechte',
     marked: false,
     id: uid(),
     area: 'public',
     done: false
   },
   {
-    text: 'Baurecht',
+    text: 'Staatsorganisationsrecht',
     marked: false,
     id: uid(),
     area: 'public',
     done: false
   },
   {
-    text: 'Polizeirecht',
-    marked: false,
-    id: uid(),
-    area: 'public',
-    done: false
-  },
-  {
-    text: 'WirtschaftsverwRecht',
-    marked: false,
-    id: uid(),
-    area: 'public',
-    done: false
-  },
-  {
-    text: 'Verwaltungsrecht',
-    marked: false,
-    id: uid(),
-    area: 'public',
-    done: false
-  },
-  {
-    text: 'Baurecht',
-    marked: false,
-    id: uid(),
-    area: 'public',
-    done: false
-  },
-  {
-    text: 'Polizeirecht',
-    marked: false,
-    id: uid(),
-    area: 'public',
-    done: false
-  },
-  {
-    text: 'WirtschaftsverwRecht',
-    marked: false,
-    id: uid(),
-    area: 'public',
-    done: false
-  },
-  {
-    text: 'Verwaltungsrecht',
+    text: 'Verwaltungsrecht AT',
     marked: false,
     id: uid(),
     area: 'public',
@@ -135,45 +114,17 @@ export default [
     done: false
   },
   {
-    text: 'Strafrecht AT',
+    text: 'Staatshaftungsrecht',
     marked: false,
     id: uid(),
-    area: 'criminal',
+    area: 'public',
     done: false
   },
   {
-    text: 'Strafrecht BT',
+    text: 'Europarecht',
     marked: false,
     id: uid(),
-    area: 'criminal',
-    done: false
-  },
-  {
-    text: 'Strafrecht AT',
-    marked: false,
-    id: uid(),
-    area: 'criminal',
-    done: false
-  },
-  {
-    text: 'Strafrecht BT',
-    marked: false,
-    id: uid(),
-    area: 'criminal',
-    done: false
-  },
-  {
-    text: 'Strafrecht AT',
-    marked: false,
-    id: uid(),
-    area: 'criminal',
-    done: false
-  },
-  {
-    text: 'Strafrecht BT',
-    marked: false,
-    id: uid(),
-    area: 'criminal',
+    area: 'public',
     done: false
   },
   {
