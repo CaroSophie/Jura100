@@ -3,16 +3,16 @@ import styled from 'styled-components'
 
 const Progress = styled.div`
   background: lightgrey;
-  margin: 10px;
-  margin-top: 20px;
   border-radius: 10px 10px 10px;
   border: 5px solid white;
   color: red;
   display: grid;
-  text-align: start;
-  font-weight: bold;
-  padding: 2px;
   font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin: 10px;
+  padding: 2px;
 
   &::after {
     content: '';

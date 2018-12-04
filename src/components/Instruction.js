@@ -12,20 +12,21 @@ import {
 library.add(faBookmark, faInfo, faClipboardCheck)
 
 const Wrapper = styled.div`
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  padding-top: 30px;
+  width: 100%;
 `
 
 const Toggle = styled.button`
+  border-radius: 50%;
+  border: 2px solid lightseagreen;
   color: black;
   font-size: 1em;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+  height: 80px;
+  width: 80px;
 
   &:focus {
     outline: none;
@@ -40,9 +41,12 @@ const Helptext = styled.div`
   background: whitesmoke;
   border: 5px solid black;
 
+  ul {
+    list-style-type: none;
+  }
+
   .svg-inline--fa {
     color: black;
-    height: 1em;
   }
 `
 
@@ -75,20 +79,20 @@ export default class Instruction extends Component {
   renderHelp() {
     return (
       <Helptext>
-        <ol>
+        <ul>
           <li>
-            Markiere dir wichtige Lernthemen!
             <FontAwesomeIcon icon="bookmark" />
+            Markiere dir wichtige Lernthemen!
           </li>
           <li>
-            Speicher schon gelernte Themen!
             <FontAwesomeIcon icon="clipboard-check" />
+            Speicher schon gelernte Themen ab!
           </li>
           <li>
             Beobachte deinen stets wachsenden prozentualen Lernerfolg!
             <Closehelp onClick={this.props.handleToggleButton}>X</Closehelp>
           </li>
-        </ol>
+        </ul>
       </Helptext>
     )
   }

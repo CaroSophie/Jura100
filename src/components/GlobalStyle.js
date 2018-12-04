@@ -5,10 +5,10 @@ export default createGlobalStyle`
 
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(0.4turn,#000000,#a6aade);
+  background: lightgrey;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

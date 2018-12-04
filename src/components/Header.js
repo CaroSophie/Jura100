@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const Heading = styled.h1`
   color: white;
-  background: #595959;
+  background: lightseagreen;
   margin: 0;
-  height: 2em;
+  height: 3em;
   display: grid;
   justify-content: center;
   align-items: center;

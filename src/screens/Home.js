@@ -9,14 +9,14 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 const Wrapper = styled.main`
-  background: linear-gradient(0.4turn, #000000, #a6aade);
+  background: linear-gradient(0.4turn, #ff8100, #ffe213);
   height: 100vh;
 
   a:any-link {
     text-decoration: none;
   }
 `
-const Cardcontainer = styled.div`
+const Container = styled.div`
   margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -30,7 +30,7 @@ export default class Home extends Component {
         <Header />
         <Welcome />
         <Progressbar percentage={this.props.showprogress} />
-        <Cardcontainer>
+        <Container>
           <NavLink to="/private">
             <Card text="Zivilrecht" />
           </NavLink>{' '}
@@ -40,7 +40,7 @@ export default class Home extends Component {
           <NavLink to="/criminal">
             <Card text="Strafrecht" />
           </NavLink>
-        </Cardcontainer>
+        </Container>
         <Instruction
           handleToggleButton={this.props.onToggle}
           showHelp={this.props.showHelp}

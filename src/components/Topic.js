@@ -4,7 +4,7 @@ import Bookmark from './Bookmark'
 import Checkbox from './Checkbox'
 
 const Wrapper = styled.section`
-  padding: 15px;
+  padding: 5px;
 `
 
 const Topics = styled.div`

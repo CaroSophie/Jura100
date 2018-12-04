@@ -51,6 +51,13 @@ export default [
     done: false
   },
   {
+    text: 'Arbeitsrecht',
+    marked: false,
+    id: uid(),
+    area: 'private',
+    done: false
+  },
+  {
     text: 'Gesellschaftsrecht',
     marked: false,
     id: uid(),
@@ -59,6 +66,13 @@ export default [
   },
   {
     text: 'Handelsrecht',
+    marked: false,
+    id: uid(),
+    area: 'private',
+    done: false
+  },
+  {
+    text: '',
     marked: false,
     id: uid(),
     area: 'private',
@@ -122,6 +136,13 @@ export default [
   },
   {
     text: 'Europarecht',
+    marked: false,
+    id: uid(),
+    area: 'public',
+    done: false
+  },
+  {
+    text: '',
     marked: false,
     id: uid(),
     area: 'public',

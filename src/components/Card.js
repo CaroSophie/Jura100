@@ -8,9 +8,10 @@ const Stylecards = styled.div`
   display: grid;
   align-items: center;
   text-align: center;
-  box-shadow: 2px 2px 2px black;
-  border-radius: 20px;
-  border: 2px solid black;
+  box-shadow: 2px 2px 2px grey;
+  /* border-radius: 20px; */
+  /* border: 1px solid grey; */
+  background: whitesmoke;
 `
 
 export default class Cards extends Component {
