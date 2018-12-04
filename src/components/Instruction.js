@@ -15,10 +15,8 @@ library.add(faBookmark, faInfo, faClipboardCheck, faPercentage)
 const Wrapper = styled.div`
   align-items: center;
   display: flex;
-  height: 100px;
   justify-content: center;
-  padding-top: 30px;
-  width: 100%;
+  padding: 20px;
 `
 
 const Toggle = styled.button`

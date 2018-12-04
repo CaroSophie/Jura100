@@ -15,8 +15,8 @@ library.add(faBars, faClipboardCheck, faBookmark)
 const Navbar = styled.footer`
   /* background: #595959; */
   background: lightseagreen;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;

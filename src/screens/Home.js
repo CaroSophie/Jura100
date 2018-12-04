@@ -8,9 +8,10 @@ import Instruction from '../components/Instruction'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
-const Wrapper = styled.main`
+const Wrapper = styled.section`
   background: linear-gradient(0.4turn, #ff8100, #ffe213);
   height: 100vh;
+  display: grid;
 
   a:any-link {
     text-decoration: none;
@@ -21,6 +22,8 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  overflow-y: scroll;
+  /* display: block; */
 `
 const Line = styled.div`
   width: 100%;
@@ -39,7 +42,7 @@ export default class Home extends Component {
         <Container>
           <NavLink to="/private">
             <Card text="Zivilrecht" />
-          </NavLink>{' '}
+          </NavLink>
           <NavLink to="/public">
             <Card text="Öffentliches Recht" />
           </NavLink>

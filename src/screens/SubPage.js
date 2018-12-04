@@ -10,7 +10,7 @@ const Wrapper = styled.section`
   background: linear-gradient(0.4turn, #ff8100, #ffe213);
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px 40px auto 40px;
+  grid-template-rows: 40px 40px auto 50px;
   /* min-height: 100vh; */
 
   main {
