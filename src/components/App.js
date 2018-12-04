@@ -7,7 +7,8 @@ import Defaulttopics from '../data/Defaulttopics'
 
 export default class App extends Component {
   state = {
-    topics: this.load()
+    topics: this.load(),
+    showHelp: false
   }
 
   fillBookmarkIcon = id => {
@@ -44,6 +45,12 @@ export default class App extends Component {
     return doneTopics.length / topics.length
   }
 
+  expandInstruction = () => {
+    this.setState({
+      showHelp: !this.state.showHelp
+    })
+  }
+
   render() {
     this.save()
     return (
@@ -52,7 +59,13 @@ export default class App extends Component {
           <Route
             exact
             path="/"
-            render={() => <Home showprogress={this.showProgress()} />}
+            render={() => (
+              <Home
+                showprogress={this.showProgress()}
+                onToggle={this.expandInstruction}
+                showHelp={this.state.showHelp}
+              />
+            )}
           />
           <Route
             path="/private"

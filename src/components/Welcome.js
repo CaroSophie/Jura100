@@ -4,6 +4,8 @@ import styled from 'styled-components'
 const Welcome = styled.h2`
   color: white;
   margin: 30px;
+  display: flex;
+  justify-content: center;
 `
 
 export default class Profile extends Component {
