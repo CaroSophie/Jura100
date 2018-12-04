@@ -16,7 +16,6 @@ const Wrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 50px;
 `
 
 const Toggle = styled.button`
@@ -37,8 +36,8 @@ const Toggle = styled.button`
 `
 const Helptext = styled.div`
   color: black;
-  background: whitesmoke;
-  border: 2px solid lightseagreen;
+  background: white;
+  border: 5px solid lightseagreen;
   margin-right: 10px;
 
   ul {
@@ -55,7 +54,7 @@ const Closehelp = styled.button`
   color: black;
   font-weight: bold;
   background: white;
-  margin-left: 150px;
+  margin-left: 50%;
 
   &:focus {
     outline: none;

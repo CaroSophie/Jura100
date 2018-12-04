@@ -52,12 +52,12 @@ export default class Home extends Component {
             </NavLink>
             <NavLink to="/criminal">
               <Card text="Strafrecht" />
-            </NavLink>
+            </NavLink>{' '}
+            <Instruction
+              handleToggleButton={this.props.onToggle}
+              showHelp={this.props.showHelp}
+            />
           </Container>
-          <Instruction
-            handleToggleButton={this.props.onToggle}
-            showHelp={this.props.showHelp}
-          />
         </main>
         <Footer />
       </Wrapper>
