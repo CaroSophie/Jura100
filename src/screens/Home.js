@@ -5,6 +5,7 @@ import Card from '../components/Card'
 import Progressbar from '../components/Progressbar'
 import Instruction from '../components/Instruction'
 import Welcome from '../components/Welcome'
+import img from '../images/background.jpeg'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
@@ -16,7 +17,7 @@ const Wrapper = styled.section`
   main {
     overflow-y: scroll;
     display: block;
-    background-image: url('https://images.unsplash.com/photo-1536821824982-ee7e97e7807d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+    background: url(${img});
     background-size: cover;
   }
 
