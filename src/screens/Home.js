@@ -9,14 +9,14 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
 const Wrapper = styled.section`
-  background: linear-gradient(0.4turn, #ff8100, #ffe213);
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px auto 50px;
+  grid-template-rows: 40px 2px 40px auto 50px;
 
   main {
     overflow-y: scroll;
     display: block;
+    background-image: url('https://images.unsplash.com/photo-1536821824982-ee7e97e7807d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
   }
 
   a:any-link {
@@ -31,7 +31,6 @@ const Container = styled.div`
 `
 const Line = styled.div`
   width: 100%;
-  height: 2px;
   background: white;
 `
 
@@ -40,10 +39,9 @@ export default class Home extends Component {
     return (
       <Wrapper>
         <Header />
-
+        <Line />
+        <Welcome />
         <main>
-          <Line />
-          <Welcome />
           <Progressbar percentage={this.props.showprogress} />
           <Container>
             <NavLink to="/private">
@@ -54,12 +52,13 @@ export default class Home extends Component {
             </NavLink>
             <NavLink to="/criminal">
               <Card text="Strafrecht" />
-            </NavLink>{' '}
+            </NavLink>
             <Instruction
               handleToggleButton={this.props.onToggle}
               showHelp={this.props.showHelp}
             />
           </Container>
+          {/* <Welcome /> */}
         </main>
         <Footer />
       </Wrapper>

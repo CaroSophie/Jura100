@@ -21,6 +21,11 @@ const Topics = styled.div`
   /* font-size: 1em; */
   border-radius: 10px;
   /* font-weight: bold; */
+
+  a:any-link {
+    text-decoration: none;
+    color: black;
+  }
 `
 
 export default class Topic extends Component {
@@ -28,17 +33,13 @@ export default class Topic extends Component {
     const { handleBookmark, marked, done, handleToggle, hideIcons } = this.props
     return (
       <Wrapper>
-        <NavLink to="/content">
-          <Topics>
-            {hideIcons ? (
-              <Checkbox done={done} onToggle={handleToggle} />
-            ) : null}
-            {this.props.text}
-            {hideIcons ? (
-              <Bookmark marked={marked} handleOnClick={handleBookmark} />
-            ) : null}
-          </Topics>
-        </NavLink>
+        <Topics>
+          {hideIcons ? <Checkbox done={done} onToggle={handleToggle} /> : null}
+          <NavLink to="/content">{this.props.text}</NavLink>
+          {hideIcons ? (
+            <Bookmark marked={marked} handleOnClick={handleBookmark} />
+          ) : null}
+        </Topics>
       </Wrapper>
     )
   }

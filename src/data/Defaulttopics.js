@@ -7,6 +7,14 @@ export default [
     id: uid(),
     area: 'private',
     done: false
+    // content:[
+    //   {
+    //     subject: 'Kündigung'
+    //   },
+    //   {
+    //     subject: 'Widerruf'
+    //   }
+    // ]
   },
   {
     text: 'Schuldrecht AT',

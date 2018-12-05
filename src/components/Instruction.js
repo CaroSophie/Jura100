@@ -20,8 +20,8 @@ const Wrapper = styled.div`
 
 const Toggle = styled.button`
   border-radius: 50%;
-  border: 2px solid lightseagreen;
-  color: darkgreen;
+  border: 2px solid grey;
+  color: black;
   font-size: 1em;
   height: 60px;
   width: 60px;

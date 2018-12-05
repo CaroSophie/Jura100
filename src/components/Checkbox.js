@@ -6,10 +6,6 @@ const Checkbutton = styled.input`
   height: 20px;
   margin-right: 15px;
   margin-left: 10px;
-  &.done {
-    width: 30px;
-    height: 30px;
-  }
 `
 
 export default class Checkbox extends Component {
@@ -19,7 +15,6 @@ export default class Checkbox extends Component {
         type="checkbox"
         onClick={this.props.onToggle}
         defaultChecked={this.props.done ? true : false}
-        className={this.props.done ? 'done' : ''}
       />
     )
   }

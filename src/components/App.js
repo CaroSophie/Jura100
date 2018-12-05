@@ -134,10 +134,7 @@ export default class App extends Component {
               />
             )}
           />
-          <Route
-            path="/content"
-            render={() => <Contentpage getRoute="Gelernte Themen" />}
-          />
+          <Route path="/content" render={() => <Contentpage />} />
         </div>
       </Router>
     )
