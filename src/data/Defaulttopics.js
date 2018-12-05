@@ -71,13 +71,7 @@ export default [
     area: 'private',
     done: false
   },
-  {
-    text: '',
-    marked: false,
-    id: uid(),
-    area: 'private',
-    done: false
-  },
+
   {
     text: 'Grundrechte',
     marked: false,
@@ -141,13 +135,7 @@ export default [
     area: 'public',
     done: false
   },
-  {
-    text: '',
-    marked: false,
-    id: uid(),
-    area: 'public',
-    done: false
-  },
+
   {
     text: 'Strafrecht AT',
     marked: false,

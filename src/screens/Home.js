@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Card from '../components/Card'
 import Progressbar from '../components/Progressbar'
 import Instruction from '../components/Instruction'
+import Welcome from '../components/Welcome'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
@@ -42,6 +43,7 @@ export default class Home extends Component {
 
         <main>
           <Line />
+          <Welcome />
           <Progressbar percentage={this.props.showprogress} />
           <Container>
             <NavLink to="/private">

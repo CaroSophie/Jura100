@@ -54,7 +54,8 @@ const Closehelp = styled.button`
   color: black;
   font-weight: bold;
   background: white;
-  margin-left: 50%;
+  margin-left: 45%;
+  margin-bottom: 10px;
 
   &:focus {
     outline: none;

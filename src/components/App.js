@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Home from '../screens/Home'
 import SubPage from '../screens/SubPage'
+import Contentpage from '../screens/Contentpage'
 import Defaulttopics from '../data/Defaulttopics'
 
 export default class App extends Component {
@@ -132,6 +133,10 @@ export default class App extends Component {
                 getRoute="Gelernte Themen"
               />
             )}
+          />
+          <Route
+            path="/content"
+            render={() => <Contentpage getRoute="Gelernte Themen" />}
           />
         </div>
       </Router>

@@ -13,9 +13,11 @@ const Icon = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  padding: 10px;
+  color: grey;
 
   &.marked {
-    color: red;
+    color: darkgreen;
     font-size: 2em;
   }
 `
