@@ -6,7 +6,8 @@ export default [
     marked: false,
     id: uid(),
     area: 'private',
-    done: false
+    done: false,
+    content: 'Minderjährigkeit'
     // content:[
     //   {
     //     subject: 'Kündigung'
@@ -21,7 +22,8 @@ export default [
     marked: false,
     id: uid(),
     area: 'private',
-    done: false
+    done: false,
+    content: 'Vertragsschluss'
   },
   {
     text: 'Schuldrecht BT',
@@ -92,7 +94,8 @@ export default [
     marked: false,
     id: uid(),
     area: 'public',
-    done: false
+    done: false,
+    content: 'Wahlen'
   },
   {
     text: 'Verwaltungsrecht AT',

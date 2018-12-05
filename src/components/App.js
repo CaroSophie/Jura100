@@ -134,7 +134,14 @@ export default class App extends Component {
               />
             )}
           />
-          <Route path="/content" render={() => <Contentpage />} />
+          <Route
+            path="/content"
+            render={() => (
+              <Contentpage
+                topics={this.state.topics.filter(topic => topic.content)}
+              />
+            )}
+          />
         </div>
       </Router>
     )

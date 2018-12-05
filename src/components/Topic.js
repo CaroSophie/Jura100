@@ -17,10 +17,7 @@ const Topics = styled.div`
   align-items: center;
   padding: 5px;
   box-shadow: 2px 2px 2px grey;
-  /* margin: 5px; */
-  /* font-size: 1em; */
   border-radius: 10px;
-  /* font-weight: bold; */
 
   a:any-link {
     text-decoration: none;
@@ -30,12 +27,19 @@ const Topics = styled.div`
 
 export default class Topic extends Component {
   render() {
-    const { handleBookmark, marked, done, handleToggle, hideIcons } = this.props
+    const {
+      handleBookmark,
+      marked,
+      done,
+      handleToggle,
+      hideIcons,
+      text
+    } = this.props
     return (
       <Wrapper>
         <Topics>
           {hideIcons ? <Checkbox done={done} onToggle={handleToggle} /> : null}
-          <NavLink to="/content">{this.props.text}</NavLink>
+          <NavLink to="/content">{text}</NavLink>
           {hideIcons ? (
             <Bookmark marked={marked} handleOnClick={handleBookmark} />
           ) : null}
