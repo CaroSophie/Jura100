@@ -9,7 +9,10 @@ const Hello = styled.div`
 export default class Welcome extends Component {
   render() {
     return (
-      <Hello>Willkommen User! Mit 100% ins Staatsexamen, los gehts'!</Hello>
+      <Hello>
+        Willkommen User! Mit 100% ins Staatsexamen,
+        <br /> los gehts'!
+      </Hello>
     )
   }
 }

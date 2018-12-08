@@ -11,7 +11,7 @@ const Stylecards = styled.div`
   box-shadow: 2px 2px 2px grey;
   /* border-radius: 20px; */
   /* border: 1px solid grey; */
-  background: whitesmoke;
+  background: #fbc0e5;
 `
 
 export default class Cards extends Component {

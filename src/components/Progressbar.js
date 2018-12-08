@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Progress = styled.div`
-  background: whitesmoke;
-  color: darkgreen;
+  background: #fbc0e5;
+  color: black;
   display: grid;
   font-size: 20px;
   text-align: center;
@@ -17,7 +17,7 @@ const Progress = styled.div`
     content: '';
     display: block;
     width: ${props => props.percentage * 100}%;
-    background: lightgrey;
+    background: grey;
     height: 10px;
     margin-top: 10px;
     border-radius: 30px;
