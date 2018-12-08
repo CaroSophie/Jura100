@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Progress = styled.div`
-  background: #f5d9ea;
+  background: white;
   color: black;
   display: grid;
   font-size: 20px;
