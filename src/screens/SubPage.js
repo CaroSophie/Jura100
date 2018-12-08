@@ -5,6 +5,7 @@ import Topic from '../components/Topic'
 import Footer from '../components/Footer'
 import Overview from '../components/Overview'
 import Header from '../components/Header'
+import img from '../images/Paragraph.jpg'
 
 const Wrapper = styled.section`
   background: whitesmoke;
@@ -16,7 +17,7 @@ const Wrapper = styled.section`
     overflow-y: scroll;
     display: block;
     background-size: cover;
-    background-image: url('https://images.unsplash.com/photo-1536821824982-ee7e97e7807d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+    background: url(${img});
   }
 `
 const Line = styled.div`

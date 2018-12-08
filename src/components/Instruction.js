@@ -25,6 +25,8 @@ const Toggle = styled.button`
   font-size: 1em;
   height: 60px;
   width: 60px;
+  background: #f5d9ea;
+  opacity: 0.8;
 
   &:focus {
     outline: none;

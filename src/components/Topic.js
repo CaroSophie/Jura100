@@ -9,7 +9,7 @@ const Wrapper = styled.section`
 `
 
 const Topics = styled.div`
-  background: whitesmoke;
+  background: #f5d9ea;
   color: black;
   height: 50px;
   text-align: start;
