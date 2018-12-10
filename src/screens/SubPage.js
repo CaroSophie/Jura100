@@ -8,7 +8,6 @@ import Header from '../components/Header'
 import img from '../images/background.jpeg'
 
 const Wrapper = styled.section`
-  background: whitesmoke;
   height: 100vh;
   display: grid;
   grid-template-rows: 40px 60px 2px auto 50px;

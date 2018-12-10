@@ -7,15 +7,7 @@ export default [
     id: uid(),
     area: 'private',
     done: false,
-    content: ['Minderjährigkeit', 'FOO']
-    // content:[ []
-    //   {
-    //     subject: 'Kündigung'
-    //   },
-    //   {
-    //     subject: 'Widerruf'
-    //   }
-    // ]
+    content: ['Minderjährigkeit', 'FOO', 'Verjährung']
   },
   {
     text: 'Schuldrecht AT',

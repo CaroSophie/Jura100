@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import img from '../images/background.jpeg'
 
 const Wrapper = styled.section`
-  background: whitesmoke;
   height: 100vh;
   display: grid;
   grid-template-rows: 40px auto 50px;
@@ -20,12 +19,22 @@ const Wrapper = styled.section`
 `
 
 const Styledinput = styled.input`
-  width: 100px;
+  width: 150px;
   height: 20px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 
   &:focus {
     outline: none;
   }
+`
+
+const Notice = styled.section`
+  background: whitesmoke;
+  width: 100%;
+  height: 100%;
+  color: black;
 `
 
 export default class Noticepage extends Component {
@@ -43,10 +52,26 @@ export default class Noticepage extends Component {
       <Wrapper>
         <Header />
         <main>
-          <Styledinput placeholder="Add a notice" onKeyUp={this.handleKeyUp} />
+          <Styledinput
+            // key={noticeArray.id}
+            placeholder="Füge eine Notiz hinzu..."
+            onKeyUp={this.handleKeyUp}
+          />
+          <Notice>{this.renderNotices()}</Notice>
         </main>
         <Footer />
       </Wrapper>
     )
   }
+
+  renderNotices() {
+    console.log(this.props.noticeArray)
+    return this.props.noticeArray.map(this.renderSingleNotice)
+  }
+
+  renderSingleNotice = notice => (
+    <ul>
+      <li>{notice}</li>
+    </ul>
+  )
 }

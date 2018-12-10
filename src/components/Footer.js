@@ -7,10 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
   faClipboardCheck,
-  faBookmark
+  faBookmark,
+  faEdit
 } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBars, faClipboardCheck, faBookmark)
+library.add(faBars, faClipboardCheck, faBookmark, faEdit)
 
 const Navbar = styled.footer`
   /* background: #595959; */
@@ -38,17 +39,23 @@ const Navbar = styled.footer`
   .svg-inline--fa.fa-w-14 {
     width: 1em;
   }
+  .svg-inline--fa.fa-w-18 {
+    width: 1.4em;
+  }
 `
 
 export default class Footer extends Component {
   render() {
     return (
       <Navbar>
-        <NavLink to="/checked">
-          <FontAwesomeIcon icon="clipboard-check" />
-        </NavLink>
         <NavLink to="/">
           <FontAwesomeIcon icon="bars" />
+        </NavLink>
+        <NavLink to="/notices">
+          <FontAwesomeIcon icon="edit" />
+        </NavLink>
+        <NavLink to="/checked">
+          <FontAwesomeIcon icon="clipboard-check" />
         </NavLink>
         <NavLink to="/marked">
           <FontAwesomeIcon icon="bookmark" />

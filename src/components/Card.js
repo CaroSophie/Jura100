@@ -9,8 +9,6 @@ const Stylecards = styled.div`
   align-items: center;
   text-align: center;
   box-shadow: 2px 2px 2px grey;
-  /* border-radius: 20px; */
-  /* border: 1px solid grey; */
   background: whitesmoke;
   font-weight: bold;
 `

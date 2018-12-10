@@ -13,13 +13,14 @@ const Click = styled.button`
   width: 150px;
   background: whitesmoke;
   margin-top: 50px;
+  box-shadow: 2px 2px 2px grey;
 `
 
 export default class Noticebutton extends Component {
   render() {
     return (
       <Wrapper>
-        <Click>Make notices</Click>
+        <Click>Mach dir Notizen!</Click>
       </Wrapper>
     )
   }

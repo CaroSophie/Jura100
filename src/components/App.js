@@ -11,7 +11,7 @@ export default class App extends Component {
   state = {
     topics: this.load(),
     showHelp: false,
-    notices: []
+    notices: this.loadNotices()
   }
 
   fillBookmarkIcon = id => {
@@ -61,18 +61,9 @@ export default class App extends Component {
     })
   }
 
-  renderNotices() {
-    return (
-      <React.Fragment>
-        {this.state.notices.map(this.renderSingleNotice)}
-      </React.Fragment>
-    )
-  }
-
-  renderSingleNotice = notices => <li />
-
   render() {
     this.save()
+    // this.saveNotices()
     return (
       <Router>
         <div>
@@ -165,15 +156,20 @@ export default class App extends Component {
           />
           <Route
             path="/notices"
-            render={() => <Noticepage onEnter={this.addNotice} />}
+            render={() => (
+              <Noticepage
+                onEnter={this.addNotice}
+                noticeArray={this.state.notices}
+              />
+            )}
           />
-          {this.renderNotices()}
         </div>
       </Router>
     )
   }
   save() {
     localStorage.setItem('jura-app-topics', JSON.stringify(this.state.topics))
+    localStorage.setItem('jura-app-notices', JSON.stringify(this.state.notices))
   }
 
   load() {
@@ -181,6 +177,17 @@ export default class App extends Component {
       return (
         JSON.parse(localStorage.getItem('jura-app-topics')) || Defaulttopics
       )
+    } catch (err) {
+      return []
+    }
+  }
+  // saveNotices() {
+  //   localStorage.setItem('jura-app-notices', JSON.stringify(this.state.notices))
+  // }
+
+  loadNotices() {
+    try {
+      return JSON.parse(localStorage.getItem('jura-app-notices')) || []
     } catch (err) {
       return []
     }
