@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import img from '../images/holzhammer.jpg'
 
 const Wrapper = styled.section`
   height: 100vh;
@@ -12,6 +13,8 @@ const Wrapper = styled.section`
   main {
     overflow-y: scroll;
     display: block;
+    background-size: cover;
+    background: url(${img});
   }
 `
 
@@ -27,16 +30,38 @@ const Styledinput = styled.input`
   }
 `
 
-const Notice = styled.ul`
-  background: whitesmoke;
-  width: 100%;
+const Notice = styled.div`
+  /* width: 100vh; */
   height: 100vh;
   color: black;
 `
 
+const List = styled.div`
+  border: 1px solid lightgrey;
+  margin: 10px;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  opacity: 0.9;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 10px;
+`
+
+const Deletebutton = styled.button`
+  color: black;
+  background: white;
+
+  &:focus {
+    outline: none;
+  }
+`
+
 const Line = styled.div`
   width: 100%;
-  background: lightgrey;
+  background: darkgreen;
 `
 
 export default class Noticepage extends Component {
@@ -54,9 +79,9 @@ export default class Noticepage extends Component {
   }
 
   renderSingleNotice = notice => (
-    <li key={notice.id} onClick={() => this.props.onDelete(notice.id)}>
-      {notice.text}
-    </li>
+    <List key={notice.id} onClick={() => this.props.onDelete(notice.id)}>
+      {notice.text} <Deletebutton>x</Deletebutton>
+    </List>
   )
 
   render() {
