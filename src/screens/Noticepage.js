@@ -13,8 +13,8 @@ const Wrapper = styled.section`
   main {
     overflow-y: scroll;
     display: block;
-    background-size: cover;
-    background: url(${img});
+    /* background-size: cover;
+    background: url(${img}); */
   }
 `
 
@@ -31,7 +31,6 @@ const Styledinput = styled.input`
 `
 
 const Notice = styled.div`
-  /* width: 100vh; */
   height: 100vh;
   color: black;
 `

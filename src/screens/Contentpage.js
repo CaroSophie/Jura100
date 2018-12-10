@@ -9,14 +9,20 @@ import img from '../images/holzhammer.jpg'
 const Wrapper = styled.section`
   height: 100vh;
   display: grid;
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 50px 2px auto 50px;
 
   main {
     overflow-y: scroll;
     display: block;
-    background-size: cover;
-    background: url(${img});
+    /* background-size: cover;
+    background: url(${img}); */
+    background: whitesmoke;
   }
+`
+
+const Line = styled.div`
+  width: 100%;
+  background: darkgreen;
 `
 
 export default class Contentpage extends Component {
@@ -24,6 +30,7 @@ export default class Contentpage extends Component {
     return (
       <Wrapper>
         <Header />
+        <Line />
         <main>
           {this.props.topics.map(topic => (
             <Content content={topic.content} key={topic.id} />
