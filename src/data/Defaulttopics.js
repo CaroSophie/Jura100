@@ -7,15 +7,16 @@ export default [
     id: uid(),
     area: 'private',
     done: false,
-    content: 'Minderjährigkeit'
-    // content:[
-    //   {
-    //     subject: 'Kündigung'
-    //   },
-    //   {
-    //     subject: 'Widerruf'
-    //   }
-    // ]
+    content: [
+      'Rechtsgeschäfte',
+      'Form',
+      'Willenserklärung',
+      'Minderjährigkeit',
+      'Bedingung und Zeitbestimmung',
+      'Vertretung',
+      'Einwilligung und Genehmigung',
+      'Verjährung und Fristen'
+    ]
   },
   {
     text: 'Schuldrecht AT',
@@ -23,7 +24,11 @@ export default [
     id: uid(),
     area: 'private',
     done: false,
-    content: 'Vertragsschluss'
+    content: [
+      'Schuldverhältnis',
+      'Leistungsstörungen',
+      'Vertrag zugunsten Dritter'
+    ]
   },
   {
     text: 'Schuldrecht BT',
@@ -95,7 +100,7 @@ export default [
     id: uid(),
     area: 'public',
     done: false,
-    content: 'Wahlen'
+    content: ['Wahlen']
   },
   {
     text: 'Verwaltungsrecht AT',

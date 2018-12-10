@@ -34,13 +34,14 @@ export default class Topic extends Component {
       done,
       handleToggle,
       hideIcons,
-      text
+      text,
+      id
     } = this.props
     return (
       <Wrapper>
         <Topics>
           {hideIcons ? <Checkbox done={done} onToggle={handleToggle} /> : null}
-          <NavLink to="/content">{text}</NavLink>
+          <NavLink to={`/content/${id}`}>{text}</NavLink>
           {hideIcons ? (
             <Bookmark marked={marked} handleOnClick={handleBookmark} />
           ) : null}

@@ -5,6 +5,7 @@ import Card from '../components/Card'
 import Progressbar from '../components/Progressbar'
 import Instruction from '../components/Instruction'
 import Welcome from '../components/Welcome'
+import Noticebutton from '../components/Noticebutton'
 import img from '../images/background.jpeg'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
@@ -12,7 +13,7 @@ import { NavLink } from 'react-router-dom'
 const Wrapper = styled.section`
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px 40px 2px auto 50px;
+  grid-template-rows: 50px 40px 2px auto 50px;
 
   main {
     overflow-y: scroll;
@@ -60,6 +61,9 @@ export default class Home extends Component {
               showHelp={this.props.showHelp}
             />
           </Container>
+          <NavLink to="/notices">
+            <Noticebutton />
+          </NavLink>
         </main>
         <Footer />
       </Wrapper>

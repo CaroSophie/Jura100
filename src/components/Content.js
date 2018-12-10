@@ -1,12 +1,20 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-const Contents = styled.div`
-  color: red;
+const Wrapper = styled.section`
+  padding: 5px;
+  background: whitesmoke;
+  height: 100vh;
 `
 
 export default class Content extends Component {
   render() {
-    return <Contents>{this.props.content}</Contents>
+    return (
+      <Wrapper>
+        {this.props.content.map((item, index) => (
+          <ul key={index}>{item}</ul>
+        ))}
+      </Wrapper>
+    )
   }
 }

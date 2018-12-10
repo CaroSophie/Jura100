@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import uid from 'uid'
 
 import Home from '../screens/Home'
 import SubPage from '../screens/SubPage'
 import Contentpage from '../screens/Contentpage'
+import Noticepage from '../screens/Noticepage'
 import Defaulttopics from '../data/Defaulttopics'
 
 export default class App extends Component {
   state = {
     topics: this.load(),
-    showHelp: false
+    showHelp: false,
+    notices: this.loadNotices()
   }
 
   fillBookmarkIcon = id => {
@@ -52,8 +55,25 @@ export default class App extends Component {
     })
   }
 
+  addNotice = text => {
+    console.log(text)
+    this.setState({
+      notices: [{ text, id: uid() }, ...this.state.notices]
+    })
+  }
+
+  deleteNotice = id => {
+    const { notices } = this.state
+    const index = notices.findIndex(notice => notice.id === id)
+
+    this.setState({
+      notices: [...notices.slice(0, index), ...notices.slice(index + 1)]
+    })
+  }
+
   render() {
     this.save()
+    // this.saveNotices()
     return (
       <Router>
         <div>
@@ -135,10 +155,22 @@ export default class App extends Component {
             )}
           />
           <Route
-            path="/content"
-            render={() => (
+            path="/content/:id"
+            render={({ match }) => (
               <Contentpage
-                topics={this.state.topics.filter(topic => topic.content)}
+                topics={this.state.topics.filter(
+                  topic => topic.id === match.params.id
+                )}
+              />
+            )}
+          />
+          <Route
+            path="/notices"
+            render={() => (
+              <Noticepage
+                onEnter={this.addNotice}
+                noticeArray={this.state.notices}
+                onDelete={id => this.deleteNotice(id)}
               />
             )}
           />
@@ -148,6 +180,7 @@ export default class App extends Component {
   }
   save() {
     localStorage.setItem('jura-app-topics', JSON.stringify(this.state.topics))
+    localStorage.setItem('jura-app-notices', JSON.stringify(this.state.notices))
   }
 
   load() {
@@ -155,6 +188,17 @@ export default class App extends Component {
       return (
         JSON.parse(localStorage.getItem('jura-app-topics')) || Defaulttopics
       )
+    } catch (err) {
+      return []
+    }
+  }
+  // saveNotices() {
+  //   localStorage.setItem('jura-app-notices', JSON.stringify(this.state.notices))
+  // }
+
+  loadNotices() {
+    try {
+      return JSON.parse(localStorage.getItem('jura-app-notices')) || []
     } catch (err) {
       return []
     }

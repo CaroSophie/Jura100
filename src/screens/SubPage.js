@@ -8,10 +8,9 @@ import Header from '../components/Header'
 import img from '../images/background.jpeg'
 
 const Wrapper = styled.section`
-  background: whitesmoke;
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px 60px 2px auto 50px;
+  grid-template-rows: 50px 60px 2px auto 50px;
 
   main {
     overflow-y: scroll;
@@ -22,7 +21,6 @@ const Wrapper = styled.section`
 `
 const Line = styled.div`
   width: 100%;
-  height: 2px;
   background: darkgreen;
 `
 
@@ -36,8 +34,9 @@ export default class SubPage extends Component {
         <main>
           {this.props.topics.map(topic => (
             <Topic
-              text={topic.text}
               key={topic.id}
+              text={topic.text}
+              id={topic.id}
               marked={topic.marked}
               done={topic.done}
               hideIcons={this.props.handleHiding}
