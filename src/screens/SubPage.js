@@ -5,7 +5,7 @@ import Topic from '../components/Topic'
 import Footer from '../components/Footer'
 import Overview from '../components/Overview'
 import Header from '../components/Header'
-import img from '../images/Paragraph.jpg'
+import img from '../images/background.jpeg'
 
 const Wrapper = styled.section`
   background: whitesmoke;

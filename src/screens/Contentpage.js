@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
-import img from '../images/Paragraph.jpg'
+import img from '../images/background.jpeg'
 
 const Wrapper = styled.section`
   height: 100vh;
