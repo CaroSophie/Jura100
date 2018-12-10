@@ -35,14 +35,16 @@ export default [
     marked: false,
     id: uid(),
     area: 'private',
-    done: false
+    done: false,
+    content: ['Kaufrecht']
   },
   {
     text: 'Sachenrecht',
     marked: false,
     id: uid(),
     area: 'private',
-    done: false
+    done: false,
+    content: ['Bewegliche Sachen']
   },
   {
     text: 'Kreditsicherungsrecht',

@@ -5,7 +5,7 @@ import Topic from '../components/Topic'
 import Footer from '../components/Footer'
 import Overview from '../components/Overview'
 import Header from '../components/Header'
-import img from '../images/background.jpeg'
+import img from '../images/holzhammer.jpg'
 
 const Wrapper = styled.section`
   height: 100vh;

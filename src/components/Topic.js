@@ -10,7 +10,7 @@ const Wrapper = styled.section`
 
 const Topics = styled.div`
   background: white;
-  opacity: 0.8;
+  opacity: 0.9;
   color: black;
   height: 50px;
   text-align: start;

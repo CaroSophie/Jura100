@@ -6,7 +6,7 @@ import Progressbar from '../components/Progressbar'
 import Instruction from '../components/Instruction'
 import Welcome from '../components/Welcome'
 import Noticebutton from '../components/Noticebutton'
-import img from '../images/background.jpeg'
+import img from '../images/holzhammer.jpg'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 

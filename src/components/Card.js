@@ -9,8 +9,9 @@ const Stylecards = styled.div`
   align-items: center;
   text-align: center;
   box-shadow: 2px 2px 2px grey;
-  background: whitesmoke;
+  background: white;
   font-weight: bold;
+  opacity: 0.9;
 `
 
 export default class Cards extends Component {
