@@ -7,8 +7,8 @@ export default [
     id: uid(),
     area: 'private',
     done: false,
-    content: 'Minderjährigkeit'
-    // content:[
+    content: ['Minderjährigkeit', 'FOO']
+    // content:[ []
     //   {
     //     subject: 'Kündigung'
     //   },
@@ -23,7 +23,7 @@ export default [
     id: uid(),
     area: 'private',
     done: false,
-    content: 'Vertragsschluss'
+    content: ['Vertragsschluss']
   },
   {
     text: 'Schuldrecht BT',
@@ -95,7 +95,7 @@ export default [
     id: uid(),
     area: 'public',
     done: false,
-    content: 'Wahlen'
+    content: ['Wahlen']
   },
   {
     text: 'Verwaltungsrecht AT',

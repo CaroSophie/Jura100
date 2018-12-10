@@ -5,7 +5,8 @@ import Card from '../components/Card'
 import Progressbar from '../components/Progressbar'
 import Instruction from '../components/Instruction'
 import Welcome from '../components/Welcome'
-import img from '../images/Paragraph.jpg'
+import Noticebutton from '../components/Noticebutton'
+import img from '../images/background.jpeg'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
@@ -60,6 +61,9 @@ export default class Home extends Component {
               showHelp={this.props.showHelp}
             />
           </Container>
+          <NavLink to="/notices">
+            <Noticebutton />
+          </NavLink>
         </main>
         <Footer />
       </Wrapper>

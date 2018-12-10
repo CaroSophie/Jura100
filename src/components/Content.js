@@ -7,6 +7,12 @@ const Contents = styled.div`
 
 export default class Content extends Component {
   render() {
-    return <Contents>{this.props.content}</Contents>
+    return (
+      <Contents>
+        {this.props.content.map((item, index) => (
+          <div key={index}>{item}</div>
+        ))}
+      </Contents>
+    )
   }
 }

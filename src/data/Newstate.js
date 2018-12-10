@@ -1,6 +1,19 @@
 import React, { Component } from 'react'
 import uid from 'uid'
 
+const data = [
+  {
+    title: 'Zivilrecht',
+    sub: [
+      { title: 'BGB AT' },
+      { title: 'Schuldrecht AT' },
+      { title: 'Schuldrecht AT' }
+    ]
+  },
+  { title: 'Öffentliches Recht' },
+  { title: 'Strafrecht' }
+]
+
 export default class App extends Component {
   state = {
     private: [

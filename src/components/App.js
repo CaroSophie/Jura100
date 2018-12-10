@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from '../screens/Home'
 import SubPage from '../screens/SubPage'
 import Contentpage from '../screens/Contentpage'
+import Noticepage from '../screens/Noticepage'
 import Defaulttopics from '../data/Defaulttopics'
 
 export default class App extends Component {
   state = {
     topics: this.load(),
-    showHelp: false
+    showHelp: false,
+    notices: []
   }
 
   fillBookmarkIcon = id => {
@@ -51,6 +53,23 @@ export default class App extends Component {
       showHelp: !this.state.showHelp
     })
   }
+
+  addNotice = text => {
+    console.log(text)
+    this.setState({
+      notices: [text, ...this.state.notices]
+    })
+  }
+
+  renderNotices() {
+    return (
+      <React.Fragment>
+        {this.state.notices.map(this.renderSingleNotice)}
+      </React.Fragment>
+    )
+  }
+
+  renderSingleNotice = notices => <li />
 
   render() {
     this.save()
@@ -135,13 +154,20 @@ export default class App extends Component {
             )}
           />
           <Route
-            path="/content"
-            render={() => (
+            path="/content/:id"
+            render={({ match }) => (
               <Contentpage
-                topics={this.state.topics.filter(topic => topic.content)}
+                topics={this.state.topics.filter(
+                  topic => topic.id === match.params.id
+                )}
               />
             )}
           />
+          <Route
+            path="/notices"
+            render={() => <Noticepage onEnter={this.addNotice} />}
+          />
+          {this.renderNotices()}
         </div>
       </Router>
     )
