@@ -8,14 +8,13 @@ export default [
     area: 'private',
     done: false,
     content: [
-      'Rechtsgeschäfte',
-      'Form',
-      'Willenserklärung',
-      'Minderjährigkeit',
-      'Bedingung und Zeitbestimmung',
-      'Vertretung',
-      'Einwilligung und Genehmigung',
-      'Verjährung und Fristen'
+      'Geschäftsfähigkeit (§§ 104 - 113)',
+      'Willenserklärung (§§ 116 - 144)',
+      'Vertrag (§§ 145 - 157)',
+      'Bedingung und Zeitbestimmung (§§ 158 - 163)',
+      'Vertretung und Vollmacht (§§ 164 - 181)',
+      'Einwilligung und Genehmigung (§§ 182 - 185)',
+      'Verjährung und Fristen (§§ 186 - 218)'
     ]
   },
   {
@@ -25,9 +24,13 @@ export default [
     area: 'private',
     done: false,
     content: [
-      'Schuldverhältnis',
-      'Leistungsstörungen',
-      'Vertrag zugunsten Dritter'
+      'Inhalt der Schuldverhältnisse (§§ 241 - 304)',
+      'AGB (§§ 305 - 310)',
+      'Schuldverhältnisse aus Verträgen (§§ 311 - 361)',
+      'Erlöschen der Schuldverhältnisse (§§ 362 - 397)',
+      'Übertragung einer Forderung (§§ 398 - 413)',
+      'Schuldübernahme (§§ 414 - 419)',
+      'Gläubiger- und Schuldnermehrheit (§§ 420 - 432)'
     ]
   },
   {
@@ -36,7 +39,20 @@ export default [
     id: uid(),
     area: 'private',
     done: false,
-    content: ['Kaufrecht']
+    content: [
+      'Kauf, Tausch (§§ 433 - 487)',
+      'Darlehensvertrag (§§ 488 - 515)',
+      'Schenkung (§§ 516 - 534)',
+      'Mietvertrag, Pachtvertrag (§§ 535 - 597)',
+      'Leihe (§§ 598 - 606)',
+      'Sachdarlehensvertrag (§§ 607 - 610)',
+      'Dienstvertrag (§§ 611 - 630h)',
+      'Werkvertrag(§§ 631 - 651m)',
+      'Geschäftsführung ohne Auftrag (§§ 677 - 687)',
+      'Bürgschaft (§§ 765 - 778)',
+      'Ungerechtfertigte Bereicherung (§§ 812 - 822)',
+      'Unerlaubte Handlungen (§§ 823 - 853)'
+    ]
   },
   {
     text: 'Sachenrecht',
