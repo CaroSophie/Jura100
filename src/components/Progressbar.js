@@ -7,11 +7,9 @@ const Progress = styled.div`
   display: grid;
   font-size: 20px;
   text-align: center;
-  font-weight: bold;
   margin-top: 20px;
   margin: 40px;
   padding: 2px;
-  box-shadow: 2px 2px 2px grey;
 
   &::after {
     content: '';

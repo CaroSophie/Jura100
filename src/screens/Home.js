@@ -13,7 +13,7 @@ import { NavLink } from 'react-router-dom'
 const Wrapper = styled.section`
   height: 100vh;
   display: grid;
-  grid-template-rows: 50px 40px 2px auto 50px;
+  grid-template-rows: 50px 60px 2px auto 50px;
 
   main {
     overflow-y: scroll;

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Hello = styled.div`
   text-align: center;
   color: darkgreen;
+  margin-top: 10px;
 `
 
 export default class Welcome extends Component {
