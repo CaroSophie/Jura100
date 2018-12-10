@@ -10,7 +10,7 @@ import img from '../images/background.jpeg'
 const Wrapper = styled.section`
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px 60px 2px auto 50px;
+  grid-template-rows: 50px 60px 2px auto 50px;
 
   main {
     overflow-y: scroll;
@@ -21,7 +21,6 @@ const Wrapper = styled.section`
 `
 const Line = styled.div`
   width: 100%;
-  height: 2px;
   background: darkgreen;
 `
 

@@ -7,7 +7,16 @@ export default [
     id: uid(),
     area: 'private',
     done: false,
-    content: ['Minderjährigkeit', 'FOO', 'Verjährung']
+    content: [
+      'Rechtsgeschäfte',
+      'Form',
+      'Willenserklärung',
+      'Minderjährigkeit',
+      'Bedingung und Zeitbestimmung',
+      'Vertretung',
+      'Einwilligung und Genehmigung',
+      'Verjährung und Fristen'
+    ]
   },
   {
     text: 'Schuldrecht AT',
@@ -15,7 +24,11 @@ export default [
     id: uid(),
     area: 'private',
     done: false,
-    content: ['Vertragsschluss']
+    content: [
+      'Schuldverhältnis',
+      'Leistungsstörungen',
+      'Vertrag zugunsten Dritter'
+    ]
   },
   {
     text: 'Schuldrecht BT',

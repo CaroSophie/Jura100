@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import uid from 'uid'
 
 import Home from '../screens/Home'
 import SubPage from '../screens/SubPage'
@@ -57,7 +58,16 @@ export default class App extends Component {
   addNotice = text => {
     console.log(text)
     this.setState({
-      notices: [text, ...this.state.notices]
+      notices: [{ text, id: uid() }, ...this.state.notices]
+    })
+  }
+
+  deleteNotice = id => {
+    const { notices } = this.state
+    const index = notices.findIndex(notice => notice.id === id)
+
+    this.setState({
+      notices: [...notices.slice(0, index), ...notices.slice(index + 1)]
     })
   }
 
@@ -160,6 +170,7 @@ export default class App extends Component {
               <Noticepage
                 onEnter={this.addNotice}
                 noticeArray={this.state.notices}
+                onDelete={id => this.deleteNotice(id)}
               />
             )}
           />

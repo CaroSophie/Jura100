@@ -9,7 +9,7 @@ import img from '../images/background.jpeg'
 const Wrapper = styled.section`
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px auto 50px;
+  grid-template-rows: 50px auto 50px;
 
   main {
     overflow-y: scroll;

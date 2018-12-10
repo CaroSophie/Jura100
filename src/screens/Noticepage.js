@@ -3,18 +3,15 @@ import styled from 'styled-components'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import img from '../images/background.jpeg'
 
 const Wrapper = styled.section`
   height: 100vh;
   display: grid;
-  grid-template-rows: 40px auto 50px;
+  grid-template-rows: 50px 50px 2px auto 50px;
 
   main {
     overflow-y: scroll;
     display: block;
-    background-size: cover;
-    background: url(${img});
   }
 `
 
@@ -22,19 +19,24 @@ const Styledinput = styled.input`
   width: 150px;
   height: 20px;
   margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  border: 1px solid grey;
 
   &:focus {
     outline: none;
   }
 `
 
-const Notice = styled.section`
+const Notice = styled.ul`
   background: whitesmoke;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: black;
+`
+
+const Line = styled.div`
+  width: 100%;
+  background: lightgrey;
 `
 
 export default class Noticepage extends Component {
@@ -47,31 +49,30 @@ export default class Noticepage extends Component {
     }
   }
 
+  renderNotices() {
+    return this.props.noticeArray.map(this.renderSingleNotice)
+  }
+
+  renderSingleNotice = notice => (
+    <li key={notice.id} onClick={() => this.props.onDelete(notice.id)}>
+      {notice.text}
+    </li>
+  )
+
   render() {
     return (
       <Wrapper>
         <Header />
+        <Styledinput
+          placeholder="Füge eine Notiz hinzu..."
+          onKeyUp={this.handleKeyUp}
+        />
+        <Line />
         <main>
-          <Styledinput
-            // key={noticeArray.id}
-            placeholder="Füge eine Notiz hinzu..."
-            onKeyUp={this.handleKeyUp}
-          />
           <Notice>{this.renderNotices()}</Notice>
         </main>
         <Footer />
       </Wrapper>
     )
   }
-
-  renderNotices() {
-    console.log(this.props.noticeArray)
-    return this.props.noticeArray.map(this.renderSingleNotice)
-  }
-
-  renderSingleNotice = notice => (
-    <ul>
-      <li>{notice}</li>
-    </ul>
-  )
 }

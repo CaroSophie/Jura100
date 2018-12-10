@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Wrapper = styled.section`
   padding: 5px;
   background: whitesmoke;
+  height: 100vh;
 `
 
 export default class Content extends Component {
@@ -11,7 +12,7 @@ export default class Content extends Component {
     return (
       <Wrapper>
         {this.props.content.map((item, index) => (
-          <div key={index}>{item}</div>
+          <ul key={index}>{item}</ul>
         ))}
       </Wrapper>
     )

@@ -7,10 +7,11 @@ import {
   faBookmark,
   faInfo,
   faClipboardCheck,
-  faPercentage
+  faPercentage,
+  faEdit
 } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBookmark, faInfo, faClipboardCheck, faPercentage)
+library.add(faBookmark, faInfo, faClipboardCheck, faPercentage, faEdit)
 
 const Wrapper = styled.div`
   align-items: center;
@@ -92,9 +93,13 @@ export default class Instruction extends Component {
             Speicher schon gelernte Themen ab!
           </li>
           <li>
+            <FontAwesomeIcon icon="edit" />
+            Mach dir Notizen!
+          </li>
+          {/* <li>
             <FontAwesomeIcon icon="percentage" />
             Beobachte deinen stets wachsenden prozentualen Lernerfolg!
-          </li>
+          </li> */}
         </ul>
         <Closehelp onClick={this.props.handleToggleButton}>X</Closehelp>
       </Helptext>
