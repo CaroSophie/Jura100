@@ -4,12 +4,13 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
+import Contentoverview from '../components/Contentoverview'
 import img from '../images/holzhammer.jpg'
 
 const Wrapper = styled.section`
   height: 100vh;
   display: grid;
-  grid-template-rows: 50px 2px auto 50px;
+  grid-template-rows: 50px 60px 2px auto 50px;
 
   main {
     overflow-y: scroll;
@@ -30,6 +31,7 @@ export default class Contentpage extends Component {
     return (
       <Wrapper>
         <Header />
+        <Contentoverview />
         <Line />
         <main>
           {this.props.topics.map(topic => (

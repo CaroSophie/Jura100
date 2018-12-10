@@ -45,8 +45,6 @@ const List = styled.div`
   justify-content: space-between;
   background: white;
   opacity: 0.9;
-  box-shadow: 2px 2px 2px grey;
-  border-radius: 10px;
 `
 
 const Deletebutton = styled.button`
