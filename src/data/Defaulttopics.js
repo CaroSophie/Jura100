@@ -265,7 +265,7 @@ export default [
     done: false,
     content: [
       'Errichtung und Betrieb von Anlagen (§§ 4 - 31a)',
-      'Beschaffenheit von Anlagen, Stoffen, Erzeugnissen, Brennstoffen, Treibstoffen und Schmierstoffen (§§ 32 - 37)',
+      'Beschaffenheit von Anlagen, Stoffen, Erzeugnissen (§§ 32 - 37)',
       'Treibhausgasminderung bei Kraftstoffen (§§ 37a - 37g)',
       'TA Lärm',
       'TA Luft'
