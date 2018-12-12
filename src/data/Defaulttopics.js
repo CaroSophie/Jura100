@@ -110,10 +110,22 @@ export default [
     done: false,
     content: [
       'Individualarbeitsrecht',
+      'betrieblicher Übung',
+      'Direktionsrecht des Arbeitgebers (§ 106 GewO)',
+      'Dispositive Kollektivvereinbarungen',
+      'Dispositives Gesetzesrecht (z.B. § 616 BGB)',
+      'Das befristete Arbeitsverhältnis',
+      'Das Ausbleiben der Arbeitsleistung',
+      'Lohn ohne Arbeit',
+      'Entgeltfortzahlung',
+      'Urlaubsrecht',
       'Kündigungsrecht',
+      'Kündigungsschutzklage',
       'Kollektives Arbeitsrecht',
       'Betriebsrat, Betriebsversammlung (§§ 7 - 59a)',
-      'Mitwirkung und Mitbestimmung der Arbeitnehmer (§§ 74 - 113)'
+      'Mitwirkung und Mitbestimmung der Arbeitnehmer (§§ 74 - 113)',
+      'Tarifvertragsrecht',
+      'Arbeitsgerichtliche Streitigkeiten'
     ]
   },
   {
@@ -125,7 +137,11 @@ export default [
     content: [
       'GbR §§ (705 – 740)',
       'OHG (§§ 105 - 160 HGB)',
-      'KG (§§ 161 – 177a HGB)'
+      'KG (§§ 161 – 177a HGB)',
+      'Kaufleute (§§ 1 - 7)',
+      'Prokura und Handlungsvollmacht (§§ 48 - 58)',
+      'Handelskauf (§§ 373 - 382)',
+      'Kommissionsgeschäft (§§ 383 - 406)'
     ]
   },
   {
@@ -158,9 +174,19 @@ export default [
     area: 'public',
     done: false,
     content: [
+      'Rechtsstaatsprinzip',
+      'Bundesstaatsprinzip,',
+      'Republikprinzip',
+      'Demokratieprinzip',
+      'Sozialstaatsprinzip',
       'Verfassungsbeschwerde',
-      'abstrakte Normenkontrolle',
-      'konkrete Normenkontrolle'
+      'abstrakte Normenkontrolle (Art. 93 I Nr. 2 GG, §§ 13 Nr. 6, 76 ff. BVerfGG)',
+      'konkrete Normenkontrolle (Art. 100 I GG, §§ 13 Nr. 11, 80 ff. BVerfGG)',
+      'Organstreitverfahren (Art. 93 I Nr. 1 GG, §§ 13 Nr. 5, 63 ff. BVerfGG)',
+      'BundLänder-Streit, einstweilige Anordnung (§ 32 BVerfGG)',
+      'Bundestag, Bundesrat, Bundesregierung, Bundespräsident und Bundesverfassungsgericht',
+      'Wahlgrundsätze (Art. 38 I 1 GG)',
+      'Wahl des Bundeskanzlers (Art. 63 GG)'
     ]
   },
   {
@@ -172,8 +198,14 @@ export default [
     content: [
       'Allgemeine Verfahrensvorschriften (§§ 54 - 67a)',
       'Anfechtungs- und Verpflichtungsklagen (§§ 68 - 80b)',
+      'Leistungsklage',
+      'Fortsetzungsfeststellungsklage',
+      'Feststellungsklage',
       'Verfahren im ersten Rechtszug (§§ 81 - 106)',
-      'Einstweilige Anordnung (§ 123)'
+      'Einstweilige Anordnung (§ 123)',
+      'Der Verwaltungsakt',
+      'Das Wiederaufgreifen des Verfahrens nach § 51 VwVfG',
+      'Der öffentlich-rechtliche Vertrag'
     ]
   },
   {
@@ -186,7 +218,11 @@ export default [
       'Bauleitplanung (§§ 1 - 13a)',
       'Sicherung der Bauleitplanung (§§ 14 - 28)',
       'Zulässigkeit von Vorhaben (§§ 29 - 38)',
-      'Entschädigung (§§ 39 - 44)'
+      'Entschädigung (§§ 39 - 44)',
+      'Bauordnungsrecht',
+      'Baugenehmigungsverfahren',
+      'Errichtung, Änderungen oder Abbruch baulicher Anlagen',
+      'Nachbarklage'
     ]
   },
   {
@@ -197,6 +233,8 @@ export default [
     done: false,
     content: [
       'Maßnahmen zur Gefahrenabwehr',
+      'Sicherstellung',
+      'Unmittelbare Ausführung',
       'Verhältnismäßigkeit',
       'Maßnahmen mit Dauerwirkung',
       'Form und Inhalt der Maßnahmen',
@@ -212,7 +250,12 @@ export default [
     id: uid(),
     area: 'public',
     done: false,
-    content: ['Gaststättenrecht']
+    content: [
+      'Handwerksrecht',
+      'Gewerbeordnung',
+      'Gaststättenrecht',
+      'Erlaubnispflicht und Versagung '
+    ]
   },
   {
     text: 'Umweltrecht',
@@ -220,7 +263,13 @@ export default [
     id: uid(),
     area: 'public',
     done: false,
-    content: ['Bundesimmissionsschutzgesetzt (BImSchG)']
+    content: [
+      'Errichtung und Betrieb von Anlagen (§§ 4 - 31a)',
+      'Beschaffenheit von Anlagen, Stoffen, Erzeugnissen, Brennstoffen, Treibstoffen und Schmierstoffen (§§ 32 - 37)',
+      'Treibhausgasminderung bei Kraftstoffen (§§ 37a - 37g)',
+      'TA Lärm',
+      'TA Luft'
+    ]
   },
   {
     text: 'Staatshaftungsrecht',
@@ -229,11 +278,11 @@ export default [
     area: 'public',
     done: false,
     content: [
-      'Amtshaftungsanspruch',
+      'Amtshaftungsanspruch (Art. 34 GG iVm § 839 BGB',
       'Enteignungsgleicher Eingriff',
       'Enteignender Eingriff',
       'Inhalts- und Schrankenbestimmung',
-      'Enteignung'
+      'Enteignung (Art. 14 GG)'
     ]
   },
   {
@@ -247,7 +296,7 @@ export default [
       'Niederlassungsfreiheit (Art. 49 ff. AEUV)',
       'Dienstleistungsfreiheit (Art. 56 ff. AEUV)',
       'Warenverkehrsfreiheit (Art. 34 ff. AEUV)',
-      ' Kapitalverkehrsfreiheit (63 ff. AEUV)'
+      'Kapitalverkehrsfreiheit (63 ff. AEUV)'
     ]
   },
   {
@@ -258,10 +307,19 @@ export default [
     done: false,
     content: [
       'Grundlagen der Strafbarkeit (§§ 13 - 21)',
-      'Versuch (§§ 22 - 24)',
+      'Aufbau / Kausalität',
+      'Fahrlässigkeitsdelikte',
+      'Erfolgsqualifizierte Delikte',
+      'Unechte Unterlassungsdelikte',
+      'Echte Unterlassungsdelikte',
+      'Irrtümer',
+      'Versuch und Rücktritt (§§ 22 - 24)',
       'Täterschaft und Teilnahme (§§ 25 - 31)',
+      'Rechtswidrigkeit',
+      'Schuld',
       'Notwehr und Notstand (§§ 32 - 35)',
-      'Strafbemessung (§§ 46 - 51)'
+      'Strafbemessung (§§ 46 - 51)',
+      'Konkurrenzen'
     ]
   },
   {
@@ -307,7 +365,19 @@ export default [
       'Verteidigung (§§ 137 - 150)',
       'Verfahren im ersten Rechtszug (§§ 151 - 295)',
       'Rechtsmittel (§§ 296 - 358)',
-      'Wiederaufnahme eines Verfahrens (§§ 359 - 373a)'
+      'Wiederaufnahme eines Verfahrens (§§ 359 - 373a)',
+      'Vorverfahren',
+      'Zwischenverfahren',
+      'Hauptverfahren',
+      'Prozessuale Zwangsmaßnahmen',
+      'Untersuchungshaft',
+      'Durchsuchung',
+      'Beschlagnahme',
+      'Beweisverwertungsverbote',
+      'Beweiserhebungsverbote',
+      'Zeugnisverweigerungsrechte',
+      'Überwachung der Telekommunikation',
+      'Verdeckte Ermittler'
     ]
   }
 ]
