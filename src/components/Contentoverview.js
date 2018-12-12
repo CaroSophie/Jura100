@@ -9,6 +9,6 @@ const Overview = styled.h3`
 
 export default class Contentoverview extends Component {
   render() {
-    return <Overview>Einteilung der Unterthemen nach Gesetzen</Overview>
+    return <Overview>Übersicht über relevante Lernthemen</Overview>
   }
 }
