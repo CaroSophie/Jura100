@@ -96,10 +96,6 @@ export default class Instruction extends Component {
             <FontAwesomeIcon icon="edit" />
             Mach dir Notizen!
           </li>
-          {/* <li>
-            <FontAwesomeIcon icon="percentage" />
-            Beobachte deinen stets wachsenden prozentualen Lernerfolg!
-          </li> */}
         </ul>
         <Closehelp onClick={this.props.handleToggleButton}>X</Closehelp>
       </Helptext>

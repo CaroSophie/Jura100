@@ -5,7 +5,6 @@ import Header from '../components/Header'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
 import Contentoverview from '../components/Contentoverview'
-import img from '../images/holzhammer.jpg'
 
 const Wrapper = styled.section`
   height: 100vh;
@@ -15,8 +14,6 @@ const Wrapper = styled.section`
   main {
     overflow-y: scroll;
     display: block;
-    /* background-size: cover;
-    background: url(${img}); */
     background: whitesmoke;
   }
 `

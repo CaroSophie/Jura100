@@ -7,7 +7,7 @@ const Wrapper = styled.section`
 
 const Contents = styled.div`
   background: white;
-  height: 30px;
+  height: 40px;
   padding: 5px;
   border: 0.5px solid lightgrey;
   opacity: 0.9;

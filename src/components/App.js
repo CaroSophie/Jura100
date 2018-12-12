@@ -56,7 +56,6 @@ export default class App extends Component {
   }
 
   addNotice = text => {
-    console.log(text)
     this.setState({
       notices: [{ text, id: uid() }, ...this.state.notices]
     })
@@ -73,7 +72,6 @@ export default class App extends Component {
 
   render() {
     this.save()
-    // this.saveNotices()
     return (
       <Router>
         <div>
@@ -192,9 +190,6 @@ export default class App extends Component {
       return []
     }
   }
-  // saveNotices() {
-  //   localStorage.setItem('jura-app-notices', JSON.stringify(this.state.notices))
-  // }
 
   loadNotices() {
     try {
