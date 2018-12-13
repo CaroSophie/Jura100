@@ -175,7 +175,7 @@ export default [
     done: false,
     content: [
       'Rechtsstaatsprinzip',
-      'Bundesstaatsprinzip,',
+      'Bundesstaatsprinzip',
       'Republikprinzip',
       'Demokratieprinzip',
       'Sozialstaatsprinzip',
